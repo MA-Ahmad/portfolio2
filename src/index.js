@@ -9,12 +9,6 @@ breakpoints.md = breakpoints[1];
 breakpoints.lg = breakpoints[2];
 breakpoints.xl = breakpoints[3];
 
-const colors = {
-  black: "#000",
-  white: "#fff",
-  backgroundColor: "#000"
-};
-
 const newTheme = {
   ...theme,
   breakpoints,
