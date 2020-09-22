@@ -1,8 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import { ChakraProvider } from "@chakra-ui/core";
-
 import { theme, ThemeProvider, CSSReset } from "@chakra-ui/core";
 
 const breakpoints = ["360px", "768px", "1024px", "1440px"];
@@ -37,12 +35,3 @@ ReactDOM.render(
   </ThemeProvider>,
   document.getElementById("root")
 );
-
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <ChakraProvider resetCSS>
-//       <App />
-//     </ChakraProvider>
-//   </React.StrictMode>,
-//   document.getElementById("root")
-// );
