@@ -1,5 +1,7 @@
 import React from "react";
-import { Box, Heading, Flex, Text, Button } from "@chakra-ui/core";
+import { Box, Heading, Flex, Text, Button, Avatar } from "@chakra-ui/core";
+import { NavLink } from "react-router-dom";
+// import { FiMenu } from "react-icons/fi";
 
 const MenuItems = ({ children }) => (
   <Text mt={{ base: 4, md: 0 }} mr={6} display="block">
@@ -14,13 +16,15 @@ const Header = props => {
   return (
     <Flex
       as="nav"
-      border="1px"
       align="center"
       justify="space-between"
       wrap="wrap"
       padding="1.5rem"
-      bg="teal.500"
-      color="white"
+      color="#2D3748"
+      marginLeft="auto"
+      marginRight="auto"
+      maxWidth="48rem"
+      paddingTop="3rem"
       {...props}
     >
       <Flex
@@ -30,12 +34,16 @@ const Header = props => {
         justifyContent={{ base: "space-between", md: "flex-start" }}
       >
         <Heading as="h1" size="lg" letterSpacing={"-.1rem"}>
-          Chakra UI
+          <Avatar
+            name="Muhammad Ahmad"
+            size="xl"
+            src="https://avatars2.githubusercontent.com/u/37842853?v=4"
+          />
         </Heading>
 
         <Box display={{ sm: "block", md: "none" }} onClick={handleToggle}>
           <svg
-            fill="white"
+            fill="black"
             width="12px"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
@@ -43,6 +51,7 @@ const Header = props => {
             <title>Menu</title>
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
           </svg>
+          {/* <FiMenu /> */}
         </Box>
       </Flex>
 
@@ -52,9 +61,36 @@ const Header = props => {
         alignItems="center"
         flexGrow={1}
       >
-        <MenuItems>Docs</MenuItems>
-        <MenuItems>Examples</MenuItems>
-        <MenuItems>Blog</MenuItems>
+        <MenuItems>
+          <NavLink
+            exact
+            to="/"
+            activeClassName="active"
+            activeStyle={{ textDecoration: "underline" }}
+          >
+            About
+          </NavLink>
+        </MenuItems>
+        <MenuItems>
+          <NavLink
+            exact
+            to="/open-source"
+            activeClassName="active"
+            activeStyle={{ textDecoration: "underline" }}
+          >
+            Open Source
+          </NavLink>
+        </MenuItems>
+        <MenuItems>
+          <NavLink
+            exact
+            to="/blog"
+            activeClassName="active"
+            activeStyle={{ textDecoration: "underline" }}
+          >
+            Blog
+          </NavLink>
+        </MenuItems>
       </Box>
 
       <Box
