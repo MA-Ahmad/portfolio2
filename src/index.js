@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import { ChakraProvider } from "@chakra-ui/core";
-import Header from "./header";
+
 import { theme, ThemeProvider, CSSReset } from "@chakra-ui/core";
 
 const breakpoints = ["360px", "768px", "1024px", "1440px"];
@@ -20,13 +20,20 @@ const colors = {
 const newTheme = {
   ...theme,
   breakpoints,
-  colors: colors
+  colors: {
+    ...theme.colors,
+    brand: {
+      900: "#1a365d",
+      800: "#153e75",
+      700: "#2a69ac"
+    }
+  }
 };
 
 ReactDOM.render(
   <ThemeProvider theme={newTheme}>
     <CSSReset />
-    <Header />
+    <App />
   </ThemeProvider>,
   document.getElementById("root")
 );

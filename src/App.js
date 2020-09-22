@@ -1,19 +1,23 @@
 import React from "react";
 import "./App.css";
-import { Button, ButtonGroup, Container } from "@chakra-ui/core";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Header from "./header";
+import About from "./components/About";
+import OpenSource from "./components/OpenSource";
+import Blog from "./components/Blog";
+import Footer from "./Footer";
 
 function App() {
   return (
-    <div className="App">
-      <Container>
-        There are many benefits to a joint design and development system. Not
-        only does it bring benefits to the design team, but it also brings
-        benefits to engineering teams. It makes sure that our experiences have a
-        consistent look and feel, not just in our design specs, but in
-        production
-        <Button colorScheme="blue">Button</Button>
-      </Container>
-    </div>
+    <Router>
+      <Header />
+      <Switch>
+        <Route exact path="/" component={About} />
+        <Route exact path="/open-source" component={OpenSource} />
+        <Route exact path="/blog" component={Blog} />
+      </Switch>
+      <Footer />
+    </Router>
   );
 }
 
