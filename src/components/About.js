@@ -13,7 +13,7 @@ import {
   useColorMode
 } from "@chakra-ui/core";
 import { FaGithub } from "react-icons/fa";
-import { FiBookmark } from "react-icons/fi";
+import { FiBookmark, FiGithub } from "react-icons/fi";
 
 function Feature({
   title,
@@ -29,8 +29,6 @@ function Feature({
     // window.location.href = url;
     window.open(url, "_blank");
   };
-  console.log("colorModeeeee");
-  console.log(colorMode);
   return (
     <Box
       p={5}
@@ -51,7 +49,7 @@ function Feature({
         height="1.5rem"
         position="absolute"
         color="#cbd5e0"
-        fill="#fff"
+        fill={`mode.${colorMode}.background`}
         right="0.5rem"
         top="-8px"
         marginBottom="1rem"
@@ -61,15 +59,31 @@ function Feature({
       </Heading>
       <Stack spacing={1} mt={1} isInline alignItems="center">
         {tags.split(",").map(tag => (
-          <Tag size="sm" key={tag} color="#4299E1" bgColor="#EBF8FF">
+          <Tag
+            size="sm"
+            key={tag}
+            color="#4299E1"
+            bgColor={`mode.${colorMode}.tagBG`}
+          >
             {tag}
           </Tag>
         ))}
-        <Tooltip label="Source Code" placement="right">
-          <Link href={github_url} isExternal style={{ textDecoration: "none" }}>
-            <FaGithub />
-          </Link>
-        </Tooltip>
+        <div>
+          <Tooltip label="Source Code" placement="right">
+            {/* <Link href={github_url} isExternal style={{ textDecoration: "none" }}> */}
+            <IconButton
+              isExternal
+              as={Link}
+              href={github_url}
+              aria-label="Github Link"
+              size="lg"
+              icon={<FiGithub />}
+              color={`mode.${colorMode}.text`}
+              variant="unstyled"
+            />
+            {/* </Link> */}
+          </Tooltip>
+        </div>
       </Stack>
       <Text mt={2} color={`mode.${colorMode}.text`}>
         {desc}
@@ -81,7 +95,7 @@ function Feature({
 const About = () => {
   const { colorMode } = useColorMode();
   return (
-    <Flex
+    <Stack
       as="main"
       padding="1.5rem"
       color="#2D3748"
@@ -91,7 +105,19 @@ const About = () => {
       maxWidth="48rem"
       paddingTop="3rem"
     >
+      <Stack spacing={2} marginBottom={8}>
+        <Heading color={`mode.${colorMode}.text`}>Hi, I'm Ahmad</Heading>
+        <Text color={`mode.${colorMode}.text`}>
+          I am a Full Stack developer, an open source lover and a writer from
+          Pakistan.
+        </Text>
+        <Text color={`mode.${colorMode}.text`}>
+          This is my digital garden, where I write about the things I'm working
+          on and share what I've learned.
+        </Text>
+      </Stack>
       <Stack spacing={4}>
+        <Heading color={`mode.${colorMode}.text`}>Featured Articles</Heading>
         <Feature
           title="Create an app with react(context api) and ruby on rails by using chakraUI and Formik"
           desc="The main goal of this app to understand how to create a react app on the basis of rails back-end api with the mixture of context-api(react) and chakraUI."
@@ -125,7 +151,7 @@ const About = () => {
           colorMode={colorMode}
         />
       </Stack>
-    </Flex>
+    </Stack>
   );
 };
 
