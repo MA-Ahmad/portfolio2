@@ -13,18 +13,29 @@ import { NavLink } from "react-router-dom";
 import { FiSun } from "react-icons/fi";
 import { FaMoon } from "react-icons/fa";
 
-const MenuItems = ({ children }) => (
-  <Text mt={{ base: 4, md: 0 }} mr={6} display="block">
+const MenuItems = ({ colorMode, children }) => (
+  <Text
+    mt={{ base: 4, md: 0 }}
+    mr={6}
+    display="block"
+    color={`mode.${colorMode}.color`}
+    _hover={{ textDecoration: "underline" }}
+  >
     {children}
   </Text>
 );
 
+const iconProps = {
+  variant: "ghost",
+  size: "lg",
+  isRound: true
+};
+
 const Header = props => {
   const [show, setShow] = useState(false);
   const handleToggle = () => setShow(!show);
-  const [isLight, setIsLight] = useState(true);
-  const toggleColor = () => setIsLight(!isLight);
   const { colorMode, toggleColorMode } = useColorMode();
+
   return (
     <Flex
       as="nav"
@@ -73,36 +84,32 @@ const Header = props => {
         alignItems="center"
         flexGrow={1}
       >
-        <MenuItems>
-          <NavLink
-            exact
-            to="/"
-            activeClassName="active"
-            activeStyle={{ textDecoration: "underline" }}
-          >
-            About
-          </NavLink>
-        </MenuItems>
-        <MenuItems>
-          <NavLink
-            exact
-            to="/open-source"
-            activeClassName="active"
-            activeStyle={{ textDecoration: "underline" }}
-          >
+        <NavLink
+          exact
+          to="/"
+          activeClassName="active"
+          activeStyle={{ textDecoration: "underline" }}
+        >
+          <MenuItems colorMode={colorMode}>About</MenuItems>
+        </NavLink>
+        <NavLink
+          exact
+          to="/open-source"
+          activeClassName="active"
+          activeStyle={{ textDecoration: "underline" }}
+        >
+          <MenuItems colorMode={colorMode} textDecoration="underline">
             Open Source
-          </NavLink>
-        </MenuItems>
-        <MenuItems>
-          <NavLink
-            exact
-            to="/blog"
-            activeClassName="active"
-            activeStyle={{ textDecoration: "underline" }}
-          >
-            Blog
-          </NavLink>
-        </MenuItems>
+          </MenuItems>
+        </NavLink>
+        <NavLink
+          exact
+          to="/blog"
+          activeClassName="active"
+          activeStyle={{ textDecoration: "underline" }}
+        >
+          <MenuItems colorMode={colorMode}>Blog</MenuItems>
+        </NavLink>
       </Box>
 
       <Box
@@ -111,16 +118,12 @@ const Header = props => {
       >
         <IconButton
           aria-label="Color Mode"
-          icon={isLight ? <FiSun /> : <FaMoon />}
-          color={isLight ? "gray.800" : "#fff"}
-          background={isLight ? "#fff" : "gray.800"}
+          icon={colorMode === "light" ? <FiSun /> : <FaMoon />}
           onClick={toggleColorMode}
           size="lg"
           isRound={true}
-          _hover={{ background: isLight ? "#E2E8F0" : "#718096" }}
+          {...iconProps}
         />
-        {/* <Button bg="transparent" border="1px">
-        </Button> */}
       </Box>
     </Flex>
   );
