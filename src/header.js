@@ -4,7 +4,6 @@ import {
   Heading,
   Flex,
   Text,
-  Button,
   Avatar,
   IconButton,
   useColorMode
