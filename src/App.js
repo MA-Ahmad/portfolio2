@@ -5,18 +5,21 @@ import About from "./components/About";
 import OpenSource from "./components/OpenSource";
 import Blog from "./components/Blog";
 import Footer from "./Footer";
+import Layout from "./layouts/layout";
+import Home from "./components/Home";
 
 function App() {
   return (
-    <Router>
-      <Header />
-      <Switch>
-        <Route exact path="/" component={About} />
-        <Route exact path="/open-source" component={OpenSource} />
-        <Route exact path="/blog" component={Blog} />
-      </Switch>
-      <Footer />
-    </Router>
+    <Home />
+    // <Router>
+    //   <Header />
+    //   <Switch>
+    //     <Route exact path="/" component={About} />
+    //     <Route exact path="/open-source" component={OpenSource} />
+    //     <Route exact path="/blog" component={Blog} />
+    //   </Switch>
+    //   <Footer />
+    // </Router>
   );
 }
 

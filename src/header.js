@@ -1,7 +1,16 @@
-import React from "react";
-import { Box, Heading, Flex, Text, Button, Avatar } from "@chakra-ui/core";
+import React, { useState } from "react";
+import {
+  Box,
+  Heading,
+  Flex,
+  Text,
+  Button,
+  Avatar,
+  IconButton
+} from "@chakra-ui/core";
 import { NavLink } from "react-router-dom";
-// import { FiMenu } from "react-icons/fi";
+import { FiSun } from "react-icons/fi";
+import { FaMoon } from "react-icons/fa";
 
 const MenuItems = ({ children }) => (
   <Text mt={{ base: 4, md: 0 }} mr={6} display="block">
@@ -10,8 +19,10 @@ const MenuItems = ({ children }) => (
 );
 
 const Header = props => {
-  const [show, setShow] = React.useState(false);
+  const [show, setShow] = useState(false);
   const handleToggle = () => setShow(!show);
+  const [isLight, setIsLight] = useState(true);
+  const toggleColor = () => setIsLight(!isLight);
 
   return (
     <Flex
@@ -97,9 +108,18 @@ const Header = props => {
         display={{ base: show ? "block" : "none", md: "block" }}
         mt={{ base: 4, md: 0 }}
       >
-        <Button bg="transparent" border="1px">
-          Create account
-        </Button>
+        <IconButton
+          aria-label="Color Mode"
+          icon={isLight ? <FiSun /> : <FaMoon />}
+          color={isLight ? "gray.800" : "#fff"}
+          background={isLight ? "#fff" : "gray.800"}
+          onClick={toggleColor}
+          size="lg"
+          isRound={true}
+          _hover={{ background: isLight ? "#E2E8F0" : "#718096" }}
+        />
+        {/* <Button bg="transparent" border="1px">
+        </Button> */}
       </Box>
     </Flex>
   );

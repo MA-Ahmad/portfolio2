@@ -9,18 +9,28 @@ import {
   Link,
   Tooltip,
   IconButton,
-  Button
+  Button,
+  useColorMode
 } from "@chakra-ui/core";
 import { FaGithub } from "react-icons/fa";
 import { FiBookmark } from "react-icons/fi";
 
-function Feature({ title, desc, tags, article_url, github_url, ...rest }) {
+function Feature({
+  title,
+  desc,
+  tags,
+  article_url,
+  github_url,
+  colorMode,
+  ...rest
+}) {
   const openUrl = url => {
     // console.log(url);
     // window.location.href = url;
     window.open(url, "_blank");
   };
-
+  console.log("colorModeeeee");
+  console.log(colorMode);
   return (
     <Box
       p={5}
@@ -45,7 +55,9 @@ function Feature({ title, desc, tags, article_url, github_url, ...rest }) {
         top="-8px"
         marginBottom="1rem"
       />
-      <Heading fontSize="xl">{title}</Heading>
+      <Heading fontSize="xl" color={`mode.dark.text`}>
+        {title}
+      </Heading>
       <Stack spacing={1} mt={1} isInline alignItems="center">
         {tags.split(",").map(tag => (
           <Tag size="sm" key={tag} color="#4299E1" bgColor="#EBF8FF">
@@ -64,11 +76,13 @@ function Feature({ title, desc, tags, article_url, github_url, ...rest }) {
 }
 
 const About = () => {
+  const { colorMode, toggleColorMode } = useColorMode();
   return (
     <Flex
       as="main"
       padding="1.5rem"
       color="#2D3748"
+      backgroundColor={`mode.${colorMode}.text`}
       marginLeft="auto"
       marginRight="auto"
       maxWidth="48rem"
@@ -81,6 +95,7 @@ const About = () => {
           tags="ruby, rails, react, chakraUi, formik"
           article_url="https://dev.to/m_ahmad/create-an-app-with-react-context-api-and-ruby-on-rails-by-using-chakraui-and-formik-40c1"
           github_url="https://github.com/MA-Ahmad/blog-app-react-frontend"
+          colorMode={colorMode}
         />
         <Feature
           title="Create ROR+React(RR) App with Tailwindcss"
@@ -88,6 +103,7 @@ const About = () => {
           tags="ruby, rails, react, tailwindcss"
           article_url="https://dev.to/m_ahmad/create-ror-react-rr-app-with-tailwindcss-3ccf"
           github_url="https://github.com/MA-Ahmad/react_rails_blog"
+          colorMode={colorMode}
         />
         <Feature
           title="Create React App with chakraUI and formik libraries"
@@ -95,6 +111,7 @@ const About = () => {
           tags="react, chakraUi, formik"
           article_url="https://dev.to/m_ahmad/create-react-app-with-chakraui-and-formik-libraries-6fi"
           github_url="https://github.com/MA-Ahmad/reactBlog"
+          colorMode={colorMode}
         />
         <Feature
           title="Convert Video to text in Ruby"
@@ -102,6 +119,7 @@ const About = () => {
           tags="ruby, ffmpeg, cloud storage"
           article_url="https://dev.to/maahmad/convert-video-to-text-in-ruby-5145"
           github_url="https://github.com/MA-Ahmad/Video-to-text"
+          colorMode={colorMode}
         />
       </Stack>
     </Flex>
