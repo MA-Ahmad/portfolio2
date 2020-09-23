@@ -78,7 +78,8 @@ const customColors = {
     light: {
       logo: "#102a43",
       background: "#fff",
-      cardBG: "#EFF2FB",
+      cardBG: "#fff",
+      border: "#e2e8f0",
       text: "#334E68",
       heading: "#102a43",
       icon: "#9FB3C8",
@@ -87,7 +88,8 @@ const customColors = {
     dark: {
       logo: "#ffffff",
       background: "#1A202C",
-      cardBG: "#243B53",
+      cardBG: "#2D3748",
+      border: "#718096",
       text: "#fff",
       color: "#fff",
       heading: "#fff",

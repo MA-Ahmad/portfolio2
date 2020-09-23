@@ -6,7 +6,8 @@ import {
   Text,
   Button,
   Avatar,
-  IconButton
+  IconButton,
+  useColorMode
 } from "@chakra-ui/core";
 import { NavLink } from "react-router-dom";
 import { FiSun } from "react-icons/fi";
@@ -23,7 +24,7 @@ const Header = props => {
   const handleToggle = () => setShow(!show);
   const [isLight, setIsLight] = useState(true);
   const toggleColor = () => setIsLight(!isLight);
-
+  const { colorMode, toggleColorMode } = useColorMode();
   return (
     <Flex
       as="nav"
@@ -113,7 +114,7 @@ const Header = props => {
           icon={isLight ? <FiSun /> : <FaMoon />}
           color={isLight ? "gray.800" : "#fff"}
           background={isLight ? "#fff" : "gray.800"}
-          onClick={toggleColor}
+          onClick={toggleColorMode}
           size="lg"
           isRound={true}
           _hover={{ background: isLight ? "#E2E8F0" : "#718096" }}

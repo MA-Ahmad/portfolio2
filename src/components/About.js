@@ -37,7 +37,8 @@ function Feature({
       _hover={{ shadow: "md" }}
       cursor="pointer"
       borderWidth="1px"
-      borderColor="#e2e8f0"
+      borderColor={`mode.${colorMode}.border`}
+      backgroundColor={`mode.${colorMode}.cardBG`}
       position="relative"
       rounded="md"
       onClick={() => openUrl(article_url)}
@@ -55,7 +56,7 @@ function Feature({
         top="-8px"
         marginBottom="1rem"
       />
-      <Heading fontSize="xl" color={`mode.dark.text`}>
+      <Heading fontSize="xl" color={`mode.${colorMode}.text`}>
         {title}
       </Heading>
       <Stack spacing={1} mt={1} isInline alignItems="center">
@@ -70,19 +71,21 @@ function Feature({
           </Link>
         </Tooltip>
       </Stack>
-      <Text mt={2}>{desc}</Text>
+      <Text mt={2} color={`mode.${colorMode}.text`}>
+        {desc}
+      </Text>
     </Box>
   );
 }
 
 const About = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode } = useColorMode();
   return (
     <Flex
       as="main"
       padding="1.5rem"
       color="#2D3748"
-      backgroundColor={`mode.${colorMode}.text`}
+      backgroundColor={`mode.${colorMode}.background`}
       marginLeft="auto"
       marginRight="auto"
       maxWidth="48rem"
