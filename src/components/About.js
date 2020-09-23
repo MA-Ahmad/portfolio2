@@ -57,7 +57,7 @@ function Feature({
       <Heading fontSize="xl" color={`mode.${colorMode}.text`}>
         {title}
       </Heading>
-      <Stack spacing={1} mt={1} isInline alignItems="center">
+      <Stack spacing={2} mt={1} isInline alignItems="center">
         {tags.split(",").map(tag => (
           <Tag
             size="sm"
