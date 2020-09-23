@@ -79,6 +79,7 @@ const customColors = {
       logo: "#102a43",
       background: "#fff",
       cardBG: "#fff",
+      tagBG: "#EBF8FF",
       border: "#e2e8f0",
       text: "#334E68",
       heading: "#102a43",
@@ -89,6 +90,7 @@ const customColors = {
       logo: "#ffffff",
       background: "#1A202C",
       cardBG: "#2D3748",
+      tagBG: "#CEEDFF",
       border: "#718096",
       text: "#fff",
       color: "#fff",
@@ -96,15 +98,6 @@ const customColors = {
       icon: "#486581",
       link: "#F8CCFF"
     }
-    // dark: {
-    //   logo: "#ffffff",
-    //   background: "#102a43",
-    //   cardBG: "#243B53",
-    //   text: "#EFF2FB",
-    //   heading: "#fff",
-    //   icon: "#486581",
-    //   link: "#F8CCFF",
-    // },
   }
 };
 
