@@ -10,12 +10,10 @@ import {
   Tooltip,
   IconButton,
   Image,
-  Button,
   useColorMode
 } from "@chakra-ui/core";
-import { FaGithub, FaGraduationCap } from "react-icons/fa";
-import { FiBookmark, FiGithub } from "react-icons/fi";
-import { FcGraduationCap } from "react-icons/fc";
+import { FaGraduationCap } from "react-icons/fa";
+import { FiGithub } from "react-icons/fi";
 import { BsFillBriefcaseFill } from "react-icons/bs";
 import PhaedraLogo from "../assets/images/phaedra.jpeg";
 import BrainxLogo from "../assets/images/brainxtech.png";
@@ -258,10 +256,8 @@ const About = () => {
               Education
             </Text>
             <Stack pl={2}>
-              {/* <FcGraduationCap /> */}
               <Box
                 as={FaGraduationCap}
-                // size="25px"
                 color={`mode.${colorMode}.career.subtext`}
               />
             </Stack>
