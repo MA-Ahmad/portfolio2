@@ -84,19 +84,31 @@ const customColors = {
       text: "#334E68",
       heading: "#102a43",
       icon: "#9FB3C8",
-      link: "#9F00FF"
+      link: "#9F00FF",
+      career: {
+        tagBG: "#f7fafc",
+        text: "#1a202c",
+        subtext: "#2d3748"
+      }
     },
     dark: {
       logo: "#ffffff",
-      background: "#1A202C",
-      cardBG: "#2D3748",
+      // background: "#1A202C",
+      // cardBG: "#2D3748",
+      background: "rgb(16, 42, 67)",
+      cardBG: "rgb(33 57 82)",
       tagBG: "#CEEDFF",
       border: "#718096",
       text: "#fff",
       color: "#fff",
       heading: "#fff",
       icon: "#486581",
-      link: "#F8CCFF"
+      link: "#F8CCFF",
+      career: {
+        tagBG: "rgba(237, 242, 247, 0.16)",
+        text: "#fff",
+        subtext: "#fff"
+      }
     }
   }
 };
