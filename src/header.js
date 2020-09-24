@@ -45,7 +45,7 @@ const Header = props => {
       color="#2D3748"
       marginLeft="auto"
       marginRight="auto"
-      maxWidth="48rem"
+      maxWidth="55rem"
       paddingTop="3rem"
       {...props}
     >
@@ -93,6 +93,14 @@ const Header = props => {
         </NavLink>
         <NavLink
           exact
+          to="/articles"
+          activeClassName="active"
+          activeStyle={{ textDecoration: "underline" }}
+        >
+          <MenuItems colorMode={colorMode}>Articles</MenuItems>
+        </NavLink>
+        <NavLink
+          exact
           to="/open-source"
           activeClassName="active"
           activeStyle={{ textDecoration: "underline" }}
@@ -117,7 +125,7 @@ const Header = props => {
       >
         <IconButton
           aria-label="Color Mode"
-          icon={colorMode === "light" ? <FiSun /> : <FaMoon />}
+          icon={colorMode === "light" ? <FaMoon /> : <FiSun />}
           onClick={toggleColorMode}
           size="lg"
           isRound={true}
