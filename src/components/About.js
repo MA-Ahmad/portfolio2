@@ -104,7 +104,7 @@ const About = () => {
     >
       <Stack spacing={2} marginBottom={8}>
         <Heading color={`mode.${colorMode}.text`}>Hi, I'm Ahmad</Heading>
-        <Text color={`mode.${colorMode}.text`}>
+        <Text color={`mode.${colorMode}.subtext`}>
           I am a Full Stack developer, an open source lover and a writer from
           Pakistan.
         </Text>
