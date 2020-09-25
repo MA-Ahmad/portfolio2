@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   Box,
   Stack,
@@ -7,12 +7,13 @@ import {
   Text,
   Tag,
   Link,
+  Tooltip,
   useColorMode
-} from "@chakra-ui/core";
-import { AiOutlineStar, AiOutlineShareAlt } from "react-icons/ai";
-import { FiGithub } from "react-icons/fi";
-import { BiBookBookmark } from "react-icons/bi";
-import { HiOutlineExternalLink } from "react-icons/hi";
+} from '@chakra-ui/core';
+import { AiOutlineStar, AiOutlineShareAlt } from 'react-icons/ai';
+import { FiGithub } from 'react-icons/fi';
+import { BiBookBookmark } from 'react-icons/bi';
+import { HiOutlineExternalLink } from 'react-icons/hi';
 
 function Repo({
   title,
@@ -28,7 +29,7 @@ function Repo({
     <Box
       paddingX={4}
       paddingY={5}
-      _hover={{ shadow: "md" }}
+      _hover={{ shadow: 'md' }}
       borderColor={`mode.${colorMode}.border`}
       backgroundColor={`mode.${colorMode}.cardBG`}
       position="relative"
@@ -49,7 +50,7 @@ function Repo({
               fontSize="xl"
               color={`mode.${colorMode}.career.text`}
               cursor="pointer"
-              _hover={{ textDecoration: "underline" }}
+              _hover={{ textDecoration: 'underline' }}
             >
               {title}
             </Heading>
@@ -57,13 +58,15 @@ function Repo({
         </Flex>
         <Flex>
           {live && (
-            <Link href={live} isExternal>
-              <Box
-                as={HiOutlineExternalLink}
-                size="20px"
-                color={`mode.${colorMode}.text`}
-              />
-            </Link>
+            <Tooltip hasArrow label="Live" placement="top">
+              <Link href={live} isExternal>
+                <Box
+                  as={HiOutlineExternalLink}
+                  size="20px"
+                  color={`mode.${colorMode}.text`}
+                />
+              </Link>
+            </Tooltip>
           )}
           <Box
             as={FiGithub}
@@ -75,7 +78,7 @@ function Repo({
       </Flex>
       <Text color={`mode.${colorMode}.career.subtext`}>{description}</Text>
       <Stack spacing={2} mt={3} isInline alignItems="center">
-        {languages.split(",").map(language => (
+        {languages.split(',').map(language => (
           <Tag
             size="sm"
             padding="0 3px"
