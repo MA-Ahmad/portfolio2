@@ -129,16 +129,8 @@ const About = () => {
           </Flex>
         </Heading>
         <Company
-          title="Codenya Studio"
-          role="Co-founder, CTO"
-          skills="Project Management, Web Development, Devops"
-          period="2017 - Present"
-          logo={CodenyaLogo}
-          colorMode={colorMode}
-        />
-        <Company
           title="Phaedra Solutions"
-          role="Full Stack Developer"
+          role="Senior Software Engineer"
           skills="Ruby, Ruby on Rails, Javascript, React, Devops"
           period="2019 - Present"
           logo={PhaedraLogo}
@@ -150,6 +142,14 @@ const About = () => {
           skills="Ruby, Ruby on Rails, Javascript, Python"
           period="2018 - 2019"
           logo={BrainxLogo}
+          colorMode={colorMode}
+        />
+        <Company
+          title="Codenya Studio"
+          role="Co-founder, CTO"
+          skills="Project Management, Web Development, Devops"
+          period="2018 - Present"
+          logo={CodenyaLogo}
           colorMode={colorMode}
         />
         <Company
