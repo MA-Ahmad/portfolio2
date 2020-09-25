@@ -7,20 +7,12 @@ import {
   Text,
   Tag,
   Link,
-  Tooltip,
-  IconButton,
-  Image,
   useColorMode
 } from "@chakra-ui/core";
 import { AiOutlineStar, AiOutlineShareAlt } from "react-icons/ai";
 import { FiGithub } from "react-icons/fi";
 import { BiBookBookmark } from "react-icons/bi";
 import { HiOutlineExternalLink } from "react-icons/hi";
-import PhaedraLogo from "../assets/images/phaedra.jpeg";
-import BrainxLogo from "../assets/images/brainxtech.png";
-import CodenyaLogo from "../assets/images/codenya.png";
-import BrainplowLogo from "../assets/images/brainplow.jpg";
-import UniLogo from "../assets/images/fast.png";
 
 function Repo({
   title,
@@ -79,22 +71,6 @@ function Repo({
             marginLeft={4}
             color={`mode.${colorMode}.text`}
           />
-          {/* <IconButton
-            isExternal
-            as={Link}
-            href={live}
-            aria-label="Demo"
-            icon={<HiOutlineExternalLink />}
-            color={`mode.${colorMode}.text`}
-            variant="unstyled"
-          />
-          <IconButton
-            as={Link}
-            aria-label="Github Link"
-            icon={<FiGithub />}
-            color={`mode.${colorMode}.text`}
-            variant="unstyled"
-          /> */}
         </Flex>
       </Flex>
       <Text color={`mode.${colorMode}.career.subtext`}>{description}</Text>
@@ -145,7 +121,6 @@ function Repo({
             </Text>
           </Flex>
         )}
-        {/* <AiOutlineStar /> */}
       </Stack>
     </Box>
   );
@@ -173,20 +148,6 @@ const OpenSource = () => {
         </Text>
       </Stack>
       <Stack spacing={4} marginBottom={6}>
-        {/* <Heading color={`mode.${colorMode}.career.text`}>
-          <Flex alignItems="center">
-            <Text as="span" color={`mode.${colorMode}.career.text`}>
-              Career
-            </Text>
-            <Stack pl={3}>
-              <Box
-                as={BsFillBriefcaseFill}
-                size="25px"
-                color={`mode.${colorMode}.career.subtext`}
-              />
-            </Stack>
-          </Flex>
-        </Heading> */}
         <Repo
           title="MA-Ahmad/reactBlog"
           description="A React Blog App built by using libraries like ChakraUI, Formik."
