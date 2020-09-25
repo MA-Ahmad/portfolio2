@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   Box,
   Stack,
@@ -9,8 +9,8 @@ import {
   Tooltip,
   IconButton,
   useColorMode
-} from "@chakra-ui/core";
-import { FiBookmark, FiGithub } from "react-icons/fi";
+} from '@chakra-ui/core';
+import { FiBookmark, FiGithub } from 'react-icons/fi';
 
 function Feature({
   title,
@@ -22,14 +22,12 @@ function Feature({
   ...rest
 }) {
   const openUrl = url => {
-    // console.log(url);
-    // window.location.href = url;
-    window.open(url, "_blank");
+    window.open(url, '_blank');
   };
   return (
     <Box
       p={5}
-      _hover={{ shadow: "md" }}
+      _hover={{ shadow: 'md' }}
       cursor="pointer"
       borderWidth="1px"
       borderColor={`mode.${colorMode}.border`}
@@ -55,7 +53,7 @@ function Feature({
         {title}
       </Heading>
       <Stack spacing={2} mt={1} isInline alignItems="center">
-        {tags.split(",").map(tag => (
+        {tags.split(',').map(tag => (
           <Tag
             size="sm"
             padding="0 3px"
