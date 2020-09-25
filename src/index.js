@@ -8,6 +8,7 @@ import {
   CSSReset
 } from "@chakra-ui/core";
 import customTheme from "./theme/theme";
+import "focus-visible/dist/focus-visible";
 
 const breakpoints = ["360px", "768px", "1024px", "1440px"];
 breakpoints.sm = breakpoints[0];
