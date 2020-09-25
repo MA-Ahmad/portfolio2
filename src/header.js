@@ -6,7 +6,8 @@ import {
   Text,
   Avatar,
   IconButton,
-  useColorMode
+  useColorMode,
+  Link
 } from "@chakra-ui/core";
 import { NavLink } from "react-router-dom";
 import { FiSun } from "react-icons/fi";
@@ -73,7 +74,6 @@ const Header = props => {
             <title>Menu</title>
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
           </svg>
-          {/* <FiMenu /> */}
         </Box>
       </Flex>
 
@@ -83,18 +83,48 @@ const Header = props => {
         alignItems="center"
         flexGrow={1}
       >
-        <NavLink
+        <Link
+          as={NavLink}
           exact
           to="/"
-          activeClassName="active"
           activeStyle={{ textDecoration: "underline" }}
+          color={`mode.${colorMode}.color`}
+          _visited={{ outline: "none" }}
         >
           <MenuItems colorMode={colorMode}>About</MenuItems>
-        </NavLink>
-        <NavLink
+        </Link>
+        <Link
+          as={NavLink}
+          exact
+          to="/articles"
+          activeStyle={{ textDecoration: "underline" }}
+          color={`mode.${colorMode}.color`}
+        >
+          <MenuItems colorMode={colorMode}>Articles</MenuItems>
+        </Link>
+        <Link
+          as={NavLink}
+          exact
+          to="/open-source"
+          activeStyle={{ textDecoration: "underline" }}
+          color={`mode.${colorMode}.color`}
+        >
+          <MenuItems colorMode={colorMode}>Open Source</MenuItems>
+        </Link>
+        <Link
+          as={NavLink}
+          exact
+          to="/projects"
+          activeStyle={{ textDecoration: "underline" }}
+          color={`mode.${colorMode}.color`}
+        >
+          <MenuItems colorMode={colorMode}>Projects</MenuItems>
+        </Link>
+        {/* <NavLink
           exact
           to="/articles"
           activeClassName="active"
+          color={`mode.${colorMode}.color`}
           activeStyle={{ textDecoration: "underline" }}
         >
           <MenuItems colorMode={colorMode}>Articles</MenuItems>
@@ -103,6 +133,7 @@ const Header = props => {
           exact
           to="/open-source"
           activeClassName="active"
+          color={`mode.${colorMode}.color`}
           activeStyle={{ textDecoration: "underline" }}
         >
           <MenuItems colorMode={colorMode} textDecoration="underline">
@@ -113,10 +144,11 @@ const Header = props => {
           exact
           to="/blog"
           activeClassName="active"
+          color={`mode.${colorMode}.color`}
           activeStyle={{ textDecoration: "underline" }}
         >
           <MenuItems colorMode={colorMode}>Blog</MenuItems>
-        </NavLink>
+        </NavLink> */}
       </Box>
 
       <Box
