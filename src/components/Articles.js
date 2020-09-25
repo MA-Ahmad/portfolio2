@@ -83,7 +83,7 @@ function Feature({
           </Tooltip>
         </div>
       </Stack>
-      <Text mt={2} color={`mode.${colorMode}.text`}>
+      <Text mt={2} color={`mode.${colorMode}.subtext`}>
         {desc}
       </Text>
     </Box>
