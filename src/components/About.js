@@ -108,7 +108,7 @@ const About = () => {
           I am a Full Stack developer, an open source lover and a writer from
           Pakistan.
         </Text>
-        <Text color={`mode.${colorMode}.text`}>
+        <Text color={`mode.${colorMode}.subtext`}>
           This is my digital garden, where I write about the things I'm working
           on and share what I've learned.
         </Text>
