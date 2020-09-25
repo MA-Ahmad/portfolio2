@@ -21,20 +21,23 @@ function Feature({
   colorMode,
   ...rest
 }) {
-  const openUrl = url => {
+  const openUrl = (e, url) => {
+    e.preventDefault();
     window.open(url, '_blank');
   };
   return (
     <Box
       p={5}
-      _hover={{ shadow: 'md' }}
+      isExternal
+      as={Link}
+      href={article_url}
+      _hover={{ shadow: 'md', textDecoration: 'none' }}
       cursor="pointer"
       borderWidth="1px"
       borderColor={`mode.${colorMode}.border`}
       backgroundColor={`mode.${colorMode}.cardBG`}
       position="relative"
       rounded="md"
-      onClick={() => openUrl(article_url)}
       {...rest}
     >
       <Box
@@ -64,24 +67,25 @@ function Feature({
             {tag}
           </Tag>
         ))}
-        <div>
-          <Tooltip label="Source Code" placement="right">
-            {/* <Link href={github_url} isExternal style={{ textDecoration: "none" }}> */}
+        <div style={{ marginLeft: '5px', paddingBottom: '3px' }}>
+          <Tooltip label="Source Code" placement="right" marginLeft="-5px">
             <IconButton
-              isExternal
-              as={Link}
-              href={github_url}
+              //   isExternal
+              //   as={Link}
+              //   href={github_url}
               aria-label="Github Link"
               size="lg"
               icon={<FiGithub />}
               color={`mode.${colorMode}.text`}
               variant="unstyled"
+              height="auto"
+              minWidth="auto"
+              onClick={e => openUrl(e, github_url)}
             />
-            {/* </Link> */}
           </Tooltip>
         </div>
       </Stack>
-      <Text mt={2} color={`mode.${colorMode}.subtext`}>
+      <Text mt={3} color={`mode.${colorMode}.subtext`}>
         {desc}
       </Text>
     </Box>
