@@ -70,9 +70,6 @@ function Feature({
         <div style={{ marginLeft: '5px', paddingBottom: '3px' }}>
           <Tooltip label="Source Code" placement="right">
             <IconButton
-              //   isExternal
-              //   as={Link}
-              //   href={github_url}
               aria-label="Github Link"
               size="lg"
               icon={<FiGithub />}
@@ -105,17 +102,6 @@ const Articles = () => {
       maxWidth="48rem"
       paddingTop="3rem"
     >
-      {/* <Stack spacing={2} marginBottom={8}>
-        <Heading color={`mode.${colorMode}.text`}>Hi, I'm Ahmad</Heading>
-        <Text color={`mode.${colorMode}.text`}>
-          I am a Full Stack developer, an open source lover and a writer from
-          Pakistan.
-        </Text>
-        <Text color={`mode.${colorMode}.text`}>
-          This is my digital garden, where I write about the things I'm working
-          on and share what I've learned.
-        </Text>
-      </Stack> */}
       <Stack spacing={4}>
         <Heading color={`mode.${colorMode}.text`}>Featured Articles</Heading>
         <Feature
