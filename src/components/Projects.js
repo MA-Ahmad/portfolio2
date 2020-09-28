@@ -191,7 +191,7 @@ const Projects = () => {
         <Project
           title="GoSave"
           desc="The GoSave app let's you send allowances, assign chores, and approve spending all from your smartphone. These actions appear on each kid's toy, along with a live bank balance so they can watch their savings grow."
-          tech="rails"
+          tech="ruby, rails"
           image_url={gosave_img}
           colorMode={colorMode}
         />
