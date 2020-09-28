@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   Box,
   Stack,
@@ -11,22 +11,22 @@ import {
   IconButton,
   Image,
   useColorMode
-} from "@chakra-ui/core";
-import { FaGraduationCap } from "react-icons/fa";
-import { FiGithub } from "react-icons/fi";
-import { BsFillBriefcaseFill } from "react-icons/bs";
-import PhaedraLogo from "../assets/images/phaedra.jpeg";
-import BrainxLogo from "../assets/images/brainxtech.png";
-import CodenyaLogo from "../assets/images/codenya.png";
-import BrainplowLogo from "../assets/images/brainplow.jpg";
-import UniLogo from "../assets/images/fast.png";
+} from '@chakra-ui/core';
+import { FaGraduationCap } from 'react-icons/fa';
+import { FiGithub } from 'react-icons/fi';
+import { BsFillBriefcaseFill } from 'react-icons/bs';
+import PhaedraLogo from '../assets/images/phaedra.jpeg';
+import BrainxLogo from '../assets/images/brainxtech.png';
+import CodenyaLogo from '../assets/images/codenya.png';
+import BrainplowLogo from '../assets/images/brainplow.jpg';
+import UniLogo from '../assets/images/fast.png';
 
 function Company({ title, role, skills, logo_url, period, logo, colorMode }) {
   return (
     <Box
       paddingX={4}
       paddingY={5}
-      _hover={{ shadow: "md" }}
+      _hover={{ shadow: 'md' }}
       // cursor="pointer"
       // borderWidth="1px"
       borderColor={`mode.${colorMode}.border`}
@@ -71,7 +71,7 @@ function Company({ title, role, skills, logo_url, period, logo, colorMode }) {
         </Stack>
       </Flex>
       <Stack spacing={2} mt={3} isInline alignItems="center">
-        {skills.split(",").map(skill => (
+        {skills.split(',').map(skill => (
           <Tag
             size="sm"
             padding="0 3px"
@@ -112,6 +112,24 @@ const About = () => {
           This is my digital garden, where I write about the things I'm working
           on and share what I've learned.
         </Text>
+      </Stack>
+      <Stack marginBottom={8}>
+        <Heading color={`mode.${colorMode}.text`}>Skills</Heading>
+        <Stack
+          padding={4}
+          borderLeft="4px solid"
+          borderColor={`mode.${colorMode}.skills.border`}
+          color={`mode.${colorMode}.career.subtext`}
+          _hover={{ shadow: 'md' }}
+          backgroundColor={`mode.${colorMode}.cardBG`}
+          rounded="md"
+          fontWeight="bold"
+        >
+          <Text>Ruby, Ruby on Rails, Javascript, React, Python</Text>
+          <Text>MySQL, PostgreSQL, Redis</Text>
+          <Text>Heroku, Amazon Web Services, Digital Ocean</Text>
+          <Text>Software Architecture, Project Management</Text>
+        </Stack>
       </Stack>
       <Stack spacing={4} marginBottom={6}>
         <Heading color={`mode.${colorMode}.career.text`}>
