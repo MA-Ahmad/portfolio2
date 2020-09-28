@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.js": "/portfolio/static/js/main.908871c5.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.908871c5.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
-    "static/js/2.a3e1f753.chunk.js": "/portfolio/static/js/2.a3e1f753.chunk.js",
-    "static/js/2.a3e1f753.chunk.js.map": "/portfolio/static/js/2.a3e1f753.chunk.js.map",
-    "index.html": "/portfolio/index.html",
-    "precache-manifest.36b70761a7d640d8e1985120f928ae04.js": "/portfolio/precache-manifest.36b70761a7d640d8e1985120f928ae04.js",
-    "service-worker.js": "/portfolio/service-worker.js",
-    "static/js/2.a3e1f753.chunk.js.LICENSE.txt": "/portfolio/static/js/2.a3e1f753.chunk.js.LICENSE.txt",
-    "static/media/codenya.png": "/portfolio/static/media/codenya.08dd3b63.png",
-    "static/media/fast.png": "/portfolio/static/media/fast.69feb01f.png",
-    "static/media/gosave.png": "/portfolio/static/media/gosave.7ec7f937.png",
-    "static/media/notch.png": "/portfolio/static/media/notch.393f543f.png",
-    "static/media/peterpitch.png": "/portfolio/static/media/peterpitch.fa97bffc.png",
-    "static/media/souq.png": "/portfolio/static/media/souq.f1770f91.png",
-    "static/media/workof.png": "/portfolio/static/media/workof.e8d6b05e.png"
+    "main.js": "/static/js/main.908871c5.chunk.js",
+    "main.js.map": "/static/js/main.908871c5.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.19ccc7f6.js",
+    "runtime-main.js.map": "/static/js/runtime-main.19ccc7f6.js.map",
+    "static/js/2.a3e1f753.chunk.js": "/static/js/2.a3e1f753.chunk.js",
+    "static/js/2.a3e1f753.chunk.js.map": "/static/js/2.a3e1f753.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.775ef3c6a7568372bc4d251e38028f8e.js": "/precache-manifest.775ef3c6a7568372bc4d251e38028f8e.js",
+    "service-worker.js": "/service-worker.js",
+    "static/js/2.a3e1f753.chunk.js.LICENSE.txt": "/static/js/2.a3e1f753.chunk.js.LICENSE.txt",
+    "static/media/codenya.png": "/static/media/codenya.08dd3b63.png",
+    "static/media/fast.png": "/static/media/fast.69feb01f.png",
+    "static/media/gosave.png": "/static/media/gosave.7ec7f937.png",
+    "static/media/notch.png": "/static/media/notch.393f543f.png",
+    "static/media/peterpitch.png": "/static/media/peterpitch.fa97bffc.png",
+    "static/media/souq.png": "/static/media/souq.f1770f91.png",
+    "static/media/workof.png": "/static/media/workof.e8d6b05e.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.209c2d7e.js",
+    "static/js/runtime-main.19ccc7f6.js",
     "static/js/2.a3e1f753.chunk.js",
     "static/js/main.908871c5.chunk.js"
   ]
