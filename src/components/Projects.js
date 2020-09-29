@@ -6,21 +6,10 @@ import {
   Flex,
   Text,
   Tag,
-  Link,
-  Tooltip,
-  IconButton,
   Image,
   useColorMode,
-  Badge,
   Grid
 } from '@chakra-ui/core';
-import { FaGraduationCap } from 'react-icons/fa';
-import { FiGithub } from 'react-icons/fi';
-import { BsFillBriefcaseFill } from 'react-icons/bs';
-import PhaedraLogo from '../assets/images/phaedra.jpeg';
-import BrainxLogo from '../assets/images/brainxtech.png';
-import CodenyaLogo from '../assets/images/codenya.png';
-import BrainplowLogo from '../assets/images/brainplow.jpg';
 import peterpitch_img from '../assets/images/Projects/peterpitch.png';
 import workof_img from '../assets/images/Projects/workof.png';
 import notch_img from '../assets/images/Projects/notch.png';
@@ -46,12 +35,7 @@ function Project_test({ title, desc, tech, colorMode, image_url }) {
         rounded="md"
       >
         <Box>
-          <Image
-            rounded="md"
-            width="12em"
-            // src={image_url ? image_url : 'https://bit.ly/2k1H1t6'}
-            src={workof_img}
-          />
+          <Image rounded="md" width="12em" src={image_url} />
         </Box>
         <Stack mt={2} pl={4}>
           <Text

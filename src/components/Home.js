@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   Box,
   Stack,
@@ -8,23 +8,21 @@ import {
   Tag,
   Link,
   Tooltip,
-  IconButton,
-  Button,
   useColorMode
-} from "@chakra-ui/core";
-import { FaGithub } from "react-icons/fa";
-import { FiBookmark } from "react-icons/fi";
-import Layout from "../layouts/layout";
+} from '@chakra-ui/core';
+import { FaGithub } from 'react-icons/fa';
+import { FiBookmark } from 'react-icons/fi';
+import Layout from '../layouts/layout';
 
 function Feature({ title, desc, tags, article_url, github_url, ...rest }) {
   const openUrl = url => {
-    window.open(url, "_blank");
+    window.open(url, '_blank');
   };
 
   return (
     <Box
       p={5}
-      _hover={{ shadow: "md" }}
+      _hover={{ shadow: 'md' }}
       cursor="pointer"
       borderWidth="1px"
       borderColor="#e2e8f0"
@@ -47,13 +45,13 @@ function Feature({ title, desc, tags, article_url, github_url, ...rest }) {
       />
       <Heading fontSize="xl">{title}</Heading>
       <Stack spacing={1} mt={1} isInline alignItems="center">
-        {tags.split(",").map(tag => (
+        {tags.split(',').map(tag => (
           <Tag size="sm" key={tag} color="#4299E1" bgColor="#EBF8FF">
             {tag}
           </Tag>
         ))}
         <Tooltip label="Source Code" placement="right">
-          <Link href={github_url} isExternal style={{ textDecoration: "none" }}>
+          <Link href={github_url} isExternal style={{ textDecoration: 'none' }}>
             <FaGithub />
           </Link>
         </Tooltip>

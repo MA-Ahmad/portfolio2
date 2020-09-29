@@ -6,9 +6,6 @@ import {
   Flex,
   Text,
   Tag,
-  Link,
-  Tooltip,
-  IconButton,
   Image,
   useColorMode
 } from '@chakra-ui/core';
@@ -27,25 +24,11 @@ function Company({ title, role, skills, logo_url, period, logo, colorMode }) {
       paddingX={4}
       paddingY={5}
       _hover={{ shadow: 'md' }}
-      // cursor="pointer"
-      // borderWidth="1px"
       borderColor={`mode.${colorMode}.border`}
       backgroundColor={`mode.${colorMode}.cardBG`}
       position="relative"
       rounded="md"
     >
-      {/* <Box
-        as={FiBookmark}
-        size="25px"
-        width="1.5rem"
-        height="1.5rem"
-        position="absolute"
-        color="#cbd5e0"
-        fill={`mode.${colorMode}.background`}
-        right="0.5rem"
-        top="-8px"
-        marginBottom="1rem"
-      /> */}
       <Flex justifyContent="space-between">
         <Flex>
           <Image
