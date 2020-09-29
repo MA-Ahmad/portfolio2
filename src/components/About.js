@@ -10,7 +10,6 @@ import {
   useColorMode
 } from '@chakra-ui/core';
 import { FaGraduationCap } from 'react-icons/fa';
-import { FiGithub } from 'react-icons/fi';
 import { BsFillBriefcaseFill } from 'react-icons/bs';
 import PhaedraLogo from '../assets/images/phaedra.jpeg';
 import BrainxLogo from '../assets/images/brainxtech.png';
