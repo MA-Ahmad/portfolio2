@@ -1,4 +1,4 @@
-This is the source for my personal website and blog mahmad.me.
+This is the source for my personal website and blog [mahmad.me](https://www.mahmad.me).
 
 ## Built with:
 - [Chakra UI](https://chakra-ui.com)
