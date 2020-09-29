@@ -5,8 +5,10 @@ This is the source for my personal website [mahmad.me](https://www.mahmad.me).
 - [Chakra UI](https://chakra-ui.com)
 - [react icons](https://react-icons.github.io/react-icons/)
 
+<!-- 
 ## Inspiration & Thanks
 - [francoisbest](https://francoisbest.com/)
+-->
 
 ## License
 
