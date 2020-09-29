@@ -1,8 +1,8 @@
 This is the source for my personal website and blog [mahmad.me](https://www.mahmad.me).
 
-## Built with:
-- [Chakra UI](https://chakra-ui.com)
+## Built with
 - [Reactjs](https://reactjs.org/)
+- [Chakra UI](https://chakra-ui.com)
 - [react icons](https://react-icons.github.io/react-icons/)
 
 ## Inspiration & Thanks
