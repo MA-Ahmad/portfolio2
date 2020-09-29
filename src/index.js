@@ -1,16 +1,11 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App";
-import {
-  theme,
-  ThemeProvider,
-  ColorModeProvider,
-  CSSReset
-} from "@chakra-ui/core";
-import customTheme from "./theme/theme";
-import "focus-visible/dist/focus-visible";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import { ThemeProvider, ColorModeProvider, CSSReset } from '@chakra-ui/core';
+import customTheme from './theme/theme';
+import 'focus-visible/dist/focus-visible';
 
-const breakpoints = ["360px", "768px", "1024px", "1440px"];
+const breakpoints = ['360px', '768px', '1024px', '1440px'];
 breakpoints.sm = breakpoints[0];
 breakpoints.md = breakpoints[1];
 breakpoints.lg = breakpoints[2];
@@ -28,5 +23,5 @@ ReactDOM.render(
       <App />
     </ColorModeProvider>
   </ThemeProvider>,
-  document.getElementById("root")
+  document.getElementById('root')
 );
