@@ -1,11 +1,11 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import About from "./components/About";
-import Articles from "./components/Articles";
-import OpenSource from "./components/OpenSource";
-import Projects from "./components/Projects";
-import Header from "./header";
-import Footer from "./Footer";
+import React from 'react';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import About from './components/About';
+import Articles from './components/Articles';
+import OpenSource from './components/OpenSource';
+import Projects from './components/Projects';
+import Header from './Header';
+import Footer from './Footer';
 
 const Routes = () => {
   return (
