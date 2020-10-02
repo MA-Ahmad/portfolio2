@@ -17,7 +17,7 @@ import CodenyaLogo from '../assets/images/codenya.png';
 import BrainplowLogo from '../assets/images/brainplow.jpg';
 import UniLogo from '../assets/images/fast.png';
 
-function Company({ title, role, skills, logo_url, period, logo, colorMode }) {
+function Company({ title, role, skills, period, logo, colorMode }) {
   return (
     <Box
       paddingX={4}
@@ -73,6 +73,36 @@ function Company({ title, role, skills, logo_url, period, logo, colorMode }) {
 
 const About = () => {
   const { colorMode } = useColorMode();
+  const companies = [
+    {
+      title: 'Phaedra Solutions',
+      role: 'Senior Software Engineer',
+      skills: 'Ruby, Ruby on Rails, Javascript, React, Devops',
+      period: '2019 - Present',
+      logo: PhaedraLogo
+    },
+    {
+      title: 'Brainx Technologies',
+      role: 'Software Engineer',
+      skills: 'Ruby, Ruby on Rails, Javascript, Python',
+      period: '2018 - 2019',
+      logo: BrainxLogo
+    },
+    {
+      title: 'Codenya Studio',
+      role: 'Co-founder, CTO',
+      skills: 'Project Management, Web Development, Devops',
+      period: '2018 - Present',
+      logo: CodenyaLogo
+    },
+    {
+      title: 'Brainplow',
+      role: 'Software Engineer',
+      skills: 'Javascript, python, Angular',
+      period: '2017 - 2018',
+      logo: BrainplowLogo
+    }
+  ];
   return (
     <Stack
       as="main"
@@ -128,38 +158,17 @@ const About = () => {
             </Stack>
           </Flex>
         </Heading>
-        <Company
-          title="Phaedra Solutions"
-          role="Senior Software Engineer"
-          skills="Ruby, Ruby on Rails, Javascript, React, Devops"
-          period="2019 - Present"
-          logo={PhaedraLogo}
-          colorMode={colorMode}
-        />
-        <Company
-          title="Brainx Technologies"
-          role="Software Engineer"
-          skills="Ruby, Ruby on Rails, Javascript, Python"
-          period="2018 - 2019"
-          logo={BrainxLogo}
-          colorMode={colorMode}
-        />
-        <Company
-          title="Codenya Studio"
-          role="Co-founder, CTO"
-          skills="Project Management, Web Development, Devops"
-          period="2018 - Present"
-          logo={CodenyaLogo}
-          colorMode={colorMode}
-        />
-        <Company
-          title="Brainplow"
-          role="Software Engineer"
-          skills="Javascript, python, Angular"
-          period="2017 - 2018"
-          logo={BrainplowLogo}
-          colorMode={colorMode}
-        />
+        {companies.map((company, index) => (
+          <Company
+            key={index}
+            title={company.title}
+            role={company.role}
+            skills={company.skills}
+            period={company.period}
+            logo={company.logo}
+            colorMode={colorMode}
+          />
+        ))}
       </Stack>
       <Stack spacing={4}>
         <Heading>
