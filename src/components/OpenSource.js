@@ -140,7 +140,7 @@ const OpenSource = () => {
       url: 'https://github.com/MA-Ahmad/reactBlog',
       live: 'https://ma-ahmad.github.io/reactBlog',
       stars: '4',
-      fork: '2'
+      fork: '1'
     },
     {
       title: 'MA-Ahmad/blog-app-react-frontend',
