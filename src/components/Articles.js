@@ -9,7 +9,7 @@ import {
   Tooltip,
   IconButton,
   useColorMode
-} from '@chakra-ui/core';
+} from '@chakra-ui/react';
 import { FiBookmark, FiGithub } from 'react-icons/fi';
 
 function Feature({

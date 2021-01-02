@@ -1,5 +1,5 @@
 import React from 'react';
-import { useColorMode } from '@chakra-ui/core';
+import { useColorMode } from '@chakra-ui/react';
 import customTheme from '../theme/theme';
 import Routes from '../Routes';
 

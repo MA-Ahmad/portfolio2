@@ -9,7 +9,7 @@ import {
   Link,
   Tooltip,
   useColorMode
-} from '@chakra-ui/core';
+} from '@chakra-ui/react';
 import { AiOutlineStar, AiOutlineShareAlt } from 'react-icons/ai';
 import { FiGithub } from 'react-icons/fi';
 import { BiBookBookmark } from 'react-icons/bi';

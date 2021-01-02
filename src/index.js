@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import { ThemeProvider, ColorModeProvider, CSSReset } from '@chakra-ui/core';
+import { ChakraProvider, ColorModeProvider, CSSReset } from '@chakra-ui/react';
 import customTheme from './theme/theme';
 import 'focus-visible/dist/focus-visible';
 
@@ -17,11 +17,11 @@ const newTheme = {
 };
 
 ReactDOM.render(
-  <ThemeProvider theme={newTheme}>
-    <ColorModeProvider>
-      <CSSReset />
-      <App />
-    </ColorModeProvider>
-  </ThemeProvider>,
+  <ChakraProvider theme={newTheme}>
+    {/* <ColorModeProvider> */}
+    <CSSReset />
+    <App />
+    {/* </ColorModeProvider> */}
+  </ChakraProvider>,
   document.getElementById('root')
 );

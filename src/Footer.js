@@ -1,5 +1,5 @@
 import React from 'react';
-import { Stack, IconButton, Link } from '@chakra-ui/core';
+import { Stack, IconButton, Link } from '@chakra-ui/react';
 import { FaGithub, FaDev, FaLinkedin, FaQuora } from 'react-icons/fa';
 import { FiMail } from 'react-icons/fi';
 

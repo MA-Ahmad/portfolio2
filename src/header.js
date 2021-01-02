@@ -8,7 +8,7 @@ import {
   IconButton,
   useColorMode,
   Link
-} from '@chakra-ui/core';
+} from '@chakra-ui/react';
 import { NavLink } from 'react-router-dom';
 import { FiSun } from 'react-icons/fi';
 import { FaMoon } from 'react-icons/fa';

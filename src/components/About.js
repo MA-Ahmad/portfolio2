@@ -8,7 +8,7 @@ import {
   Tag,
   Image,
   useColorMode
-} from '@chakra-ui/core';
+} from '@chakra-ui/react';
 import { FaGraduationCap } from 'react-icons/fa';
 import { BsFillBriefcaseFill } from 'react-icons/bs';
 import PhaedraLogo from '../assets/images/phaedra.jpeg';

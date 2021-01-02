@@ -9,7 +9,7 @@ import {
   Image,
   useColorMode,
   Grid
-} from '@chakra-ui/core';
+} from '@chakra-ui/react';
 import peterpitch_img from '../assets/images/Projects/peterpitch.png';
 import workof_img from '../assets/images/Projects/workof.png';
 import notch_img from '../assets/images/Projects/notch.png';

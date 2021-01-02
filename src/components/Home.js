@@ -9,7 +9,7 @@ import {
   Link,
   Tooltip,
   useColorMode
-} from '@chakra-ui/core';
+} from '@chakra-ui/react';
 import { FaGithub } from 'react-icons/fa';
 import { FiBookmark } from 'react-icons/fi';
 import Layout from '../layouts/layout';
