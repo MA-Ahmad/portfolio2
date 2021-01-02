@@ -77,7 +77,6 @@ const Header = props => {
           <FiMenu
             fontSize="2.5rem"
             color={colorMode === 'light' ? '#000' : '#fff'}
-            // style={{ color: `mode.${colorMode}.color` }}
           />
         </Box>
       </Flex>
