@@ -10,7 +10,7 @@ import {
   Link
 } from '@chakra-ui/react';
 import { NavLink } from 'react-router-dom';
-import { FiSun } from 'react-icons/fi';
+import { FiSun, FiMenu } from 'react-icons/fi';
 import { FaMoon } from 'react-icons/fa';
 
 const MenuItems = ({ colorMode, children }) => (
@@ -53,8 +53,8 @@ const Header = props => {
       <Flex
         align="center"
         mr={{ md: '5' }}
-        width={{ base: '100%', md: 'auto' }}
-        justifyContent={{ base: 'space-between', md: 'flex-start' }}
+        width={{ sm: '100%', md: 'auto' }}
+        justifyContent={{ sm: 'space-between', md: 'flex-start' }}
       >
         <Heading as="h1" size="lg" letterSpacing={'-.1rem'}>
           <Avatar
@@ -65,7 +65,7 @@ const Header = props => {
         </Heading>
 
         <Box display={{ sm: 'block', md: 'none' }} onClick={handleToggle}>
-          <svg
+          {/* <svg
             fill="black"
             width="12px"
             viewBox="0 0 20 20"
@@ -73,13 +73,18 @@ const Header = props => {
           >
             <title>Menu</title>
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
+          </svg> */}
+          <FiMenu
+            fontSize="2.5rem"
+            color={colorMode === 'light' ? '#000' : '#fff'}
+            // style={{ color: `mode.${colorMode}.color` }}
+          />
         </Box>
       </Flex>
 
       <Box
-        // display={{ base: show ? 'block' : 'none', md: 'flex' }}
-        display="flex"
+        display={{ sm: show ? 'block' : 'none', md: 'flex' }}
+        // display="flex"
         width={{ base: '100%', md: 'auto' }}
         alignItems="center"
         flexGrow={1}
@@ -132,8 +137,8 @@ const Header = props => {
       </Box>
 
       <Box
-        display={{ base: show ? 'block' : 'none', md: 'block' }}
-        mt={{ base: 4, md: 0 }}
+        display={{ sm: show ? 'block' : 'none', md: 'block' }}
+        mt={{ sm: 4, md: 0 }}
       >
         <IconButton
           aria-label="Color Mode"
