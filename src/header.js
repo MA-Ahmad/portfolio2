@@ -83,7 +83,6 @@ const Header = props => {
 
       <Box
         display={{ sm: show ? 'block' : 'none', md: 'flex' }}
-        // display="flex"
         width={{ base: '100%', md: 'auto' }}
         alignItems="center"
         flexGrow={1}
