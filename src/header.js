@@ -78,7 +78,8 @@ const Header = props => {
       </Flex>
 
       <Box
-        display={{ base: show ? 'block' : 'none', md: 'flex' }}
+        // display={{ base: show ? 'block' : 'none', md: 'flex' }}
+        display="flex"
         width={{ base: '100%', md: 'auto' }}
         alignItems="center"
         flexGrow={1}
@@ -88,37 +89,45 @@ const Header = props => {
           exact
           to="/"
           activeStyle={{ textDecoration: 'underline' }}
+          mr={6}
           color={`mode.${colorMode}.color`}
           _visited={{ outline: 'none' }}
         >
-          <MenuItems colorMode={colorMode}>About</MenuItems>
+          About
+          {/* <MenuItems colorMode={colorMode}>About</MenuItems> */}
         </Link>
         <Link
           as={NavLink}
           exact
           to="/articles"
           activeStyle={{ textDecoration: 'underline' }}
+          mr={6}
           color={`mode.${colorMode}.color`}
         >
-          <MenuItems colorMode={colorMode}>Articles</MenuItems>
+          Articles
+          {/* <MenuItems colorMode={colorMode}>Articles</MenuItems> */}
         </Link>
         <Link
           as={NavLink}
           exact
           to="/open-source"
           activeStyle={{ textDecoration: 'underline' }}
+          mr={6}
           color={`mode.${colorMode}.color`}
         >
-          <MenuItems colorMode={colorMode}>Open Source</MenuItems>
+          Open Source
+          {/* <MenuItems colorMode={colorMode}>Open Source</MenuItems> */}
         </Link>
         <Link
           as={NavLink}
           exact
           to="/projects"
           activeStyle={{ textDecoration: 'underline' }}
+          mr={6}
           color={`mode.${colorMode}.color`}
         >
-          <MenuItems colorMode={colorMode}>Projects</MenuItems>
+          Projects
+          {/* <MenuItems colorMode={colorMode}>Projects</MenuItems> */}
         </Link>
       </Box>
 
