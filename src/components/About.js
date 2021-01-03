@@ -16,6 +16,7 @@ import BrainxLogo from '../assets/images/brainxtech.png';
 import CodenyaLogo from '../assets/images/codenya.png';
 import BrainplowLogo from '../assets/images/brainplow.jpg';
 import UniLogo from '../assets/images/fast.png';
+import PakLogo from '../assets/images/flag/pakistan.png';
 
 function Company({ title, role, skills, period, logo, colorMode }) {
   return (
@@ -115,7 +116,17 @@ const About = () => {
       paddingTop="3rem"
     >
       <Stack spacing={2} marginBottom={8}>
-        <Heading color={`mode.${colorMode}.text`}>Hi, I'm Ahmad</Heading>
+        <Heading color={`mode.${colorMode}.text`} display="flex">
+          Hi, I'm Ahmad{' '}
+          <Image
+            htmlWidth="50px"
+            ml="5"
+            objectFit="cover"
+            src={PakLogo}
+            fallbackSrc="https://via.placeholder.com/100"
+            alt="Pakistan flag"
+          />
+        </Heading>
         <Text color={`mode.${colorMode}.subtext`}>
           I am a Full Stack developer, an open source lover and a writer from
           Pakistan.
