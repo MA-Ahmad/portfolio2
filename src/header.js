@@ -82,13 +82,22 @@ const Header = props => {
           as={NavLink}
           exact
           to="/"
-          activeStyle={{ textDecoration: 'underline' }}
+          activeStyle={{
+            background: colorMode === 'light' ? '#000' : '#252424e0',
+            color: '#fff'
+          }}
           borderRadius={{ sm: '5px' }}
           mr={{ sm: '0', md: '6' }}
+          mt={{ sm: '2' }}
           color={`mode.${colorMode}.color`}
           padding={{ sm: '1rem' }}
           display={{ sm: 'block' }}
           _visited={{ outline: 'none' }}
+          _hover={{
+            background:
+              colorMode === 'light' ? 'rgba(0, 0, 0, 0.7)' : '#463d3de0',
+            color: '#fff'
+          }}
         >
           About
         </Link>
@@ -96,12 +105,21 @@ const Header = props => {
           as={NavLink}
           exact
           to="/articles"
-          activeStyle={{ textDecoration: 'underline' }}
+          activeStyle={{
+            background: colorMode === 'light' ? '#000' : '#252424e0',
+            color: '#fff'
+          }}
           borderRadius={{ sm: '5px' }}
           mr={{ sm: '0', md: '6' }}
+          mt={{ sm: '2' }}
           padding={{ sm: '1rem' }}
           display={{ sm: 'block' }}
           color={`mode.${colorMode}.color`}
+          _hover={{
+            background:
+              colorMode === 'light' ? 'rgba(0, 0, 0, 0.7)' : '#463d3de0',
+            color: '#fff'
+          }}
         >
           Articles
         </Link>
@@ -109,12 +127,21 @@ const Header = props => {
           as={NavLink}
           exact
           to="/open-source"
-          activeStyle={{ textDecoration: 'underline' }}
+          activeStyle={{
+            background: colorMode === 'light' ? '#000' : '#252424e0',
+            color: '#fff'
+          }}
           borderRadius={{ sm: '5px' }}
           mr={{ sm: '0', md: '6' }}
+          mt={{ sm: '2' }}
           padding={{ sm: '1rem' }}
           display={{ sm: 'block' }}
           color={`mode.${colorMode}.color`}
+          _hover={{
+            background:
+              colorMode === 'light' ? 'rgba(0, 0, 0, 0.7)' : '#463d3de0',
+            color: '#fff'
+          }}
         >
           Open Source
         </Link>
@@ -122,13 +149,21 @@ const Header = props => {
           as={NavLink}
           exact
           to="/projects"
-          activeStyle={{ textDecoration: 'underline' }}
+          activeStyle={{
+            background: colorMode === 'light' ? '#000' : '#252424e0',
+            color: '#fff'
+          }}
           borderRadius={{ sm: '5px' }}
           mr={{ sm: '0', md: '6' }}
+          mt={{ sm: '2' }}
           padding={{ sm: '1rem' }}
           display={{ sm: 'block' }}
-          // color={{ sm: colorMode === 'light' ? '#000' : '#fff' }}
           color={`mode.${colorMode}.color`}
+          _hover={{
+            background:
+              colorMode === 'light' ? 'rgba(0, 0, 0, 0.7)' : '#463d3de0',
+            color: '#fff'
+          }}
         >
           Projects
         </Link>
