@@ -98,6 +98,7 @@ const Header = props => {
               colorMode === 'light' ? 'rgba(0, 0, 0, 0.7)' : '#463d3de0',
             color: '#fff'
           }}
+          onClick={() => setShow(false)}
         >
           About
         </Link>
@@ -120,6 +121,7 @@ const Header = props => {
               colorMode === 'light' ? 'rgba(0, 0, 0, 0.7)' : '#463d3de0',
             color: '#fff'
           }}
+          onClick={() => setShow(false)}
         >
           Articles
         </Link>
@@ -142,6 +144,7 @@ const Header = props => {
               colorMode === 'light' ? 'rgba(0, 0, 0, 0.7)' : '#463d3de0',
             color: '#fff'
           }}
+          onClick={() => setShow(false)}
         >
           Open Source
         </Link>
@@ -164,6 +167,7 @@ const Header = props => {
               colorMode === 'light' ? 'rgba(0, 0, 0, 0.7)' : '#463d3de0',
             color: '#fff'
           }}
+          onClick={() => setShow(false)}
         >
           Projects
         </Link>
