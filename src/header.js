@@ -74,7 +74,7 @@ const Header = props => {
 
       <Box
         display={{ sm: show ? 'block' : 'none', md: 'flex' }}
-        width={{ base: '100%', md: 'auto' }}
+        width={{ sm: '100%', md: 'auto' }}
         alignItems="center"
         flexGrow={1}
       >
@@ -83,45 +83,54 @@ const Header = props => {
           exact
           to="/"
           activeStyle={{ textDecoration: 'underline' }}
-          mr={6}
+          borderRadius={{ sm: '5px' }}
+          mr={{ sm: '0', md: '6' }}
           color={`mode.${colorMode}.color`}
+          padding={{ sm: '1rem' }}
+          display={{ sm: 'block' }}
           _visited={{ outline: 'none' }}
         >
           About
-          {/* <MenuItems colorMode={colorMode}>About</MenuItems> */}
         </Link>
         <Link
           as={NavLink}
           exact
           to="/articles"
           activeStyle={{ textDecoration: 'underline' }}
-          mr={6}
+          borderRadius={{ sm: '5px' }}
+          mr={{ sm: '0', md: '6' }}
+          padding={{ sm: '1rem' }}
+          display={{ sm: 'block' }}
           color={`mode.${colorMode}.color`}
         >
           Articles
-          {/* <MenuItems colorMode={colorMode}>Articles</MenuItems> */}
         </Link>
         <Link
           as={NavLink}
           exact
           to="/open-source"
           activeStyle={{ textDecoration: 'underline' }}
-          mr={6}
+          borderRadius={{ sm: '5px' }}
+          mr={{ sm: '0', md: '6' }}
+          padding={{ sm: '1rem' }}
+          display={{ sm: 'block' }}
           color={`mode.${colorMode}.color`}
         >
           Open Source
-          {/* <MenuItems colorMode={colorMode}>Open Source</MenuItems> */}
         </Link>
         <Link
           as={NavLink}
           exact
           to="/projects"
           activeStyle={{ textDecoration: 'underline' }}
-          mr={6}
+          borderRadius={{ sm: '5px' }}
+          mr={{ sm: '0', md: '6' }}
+          padding={{ sm: '1rem' }}
+          display={{ sm: 'block' }}
+          // color={{ sm: colorMode === 'light' ? '#000' : '#fff' }}
           color={`mode.${colorMode}.color`}
         >
           Projects
-          {/* <MenuItems colorMode={colorMode}>Projects</MenuItems> */}
         </Link>
       </Box>
 
