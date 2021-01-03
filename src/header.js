@@ -174,8 +174,10 @@ const Header = props => {
       </Box>
 
       <Box
-        display={{ sm: show ? 'block' : 'none', md: 'block' }}
         mt={{ sm: 4, md: 0 }}
+        position={{ sm: 'absolute', md: 'unset' }}
+        top="3.5rem"
+        right="5.5rem"
       >
         <IconButton
           aria-label="Color Mode"
