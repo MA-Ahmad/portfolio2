@@ -17,7 +17,6 @@ import BrainxLogo from '../assets/images/brainxtech.png';
 import CodenyaLogo from '../assets/images/codenya.png';
 import BrainplowLogo from '../assets/images/brainplow.jpg';
 import UniLogo from '../assets/images/fast.png';
-import PakLogo from '../assets/images/flag/pakistan.png';
 
 function Company({ title, role, skills, period, logo, colorMode }) {
   return (
