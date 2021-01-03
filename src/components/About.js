@@ -7,7 +7,8 @@ import {
   Text,
   Tag,
   Image,
-  useColorMode
+  useColorMode,
+  Avatar
 } from '@chakra-ui/react';
 import { FaGraduationCap } from 'react-icons/fa';
 import { BsFillBriefcaseFill } from 'react-icons/bs';
@@ -118,19 +119,25 @@ const About = () => {
       <Stack spacing={2} marginBottom={8}>
         <Heading color={`mode.${colorMode}.text`} display="flex">
           Hi, I'm Ahmad{' '}
-          <Image
-            htmlWidth="50px"
-            ml="5"
-            objectFit="cover"
-            src={PakLogo}
-            fallbackSrc="https://via.placeholder.com/100"
-            alt="Pakistan flag"
-          />
         </Heading>
-        <Text color={`mode.${colorMode}.subtext`}>
-          I am a Full Stack developer, an open source lover and a writer from
-          Pakistan.
-        </Text>
+        <Stack as="flex" flexDirection="row" alignItems="center">
+          <Box>
+            <Text color={`mode.${colorMode}.subtext`}>
+              I am a Full Stack developer, an open source lover and a writer
+              from Pakistan
+            </Text>
+          </Box>
+          <Box mb="3">
+            <Avatar
+              ml="2"
+              size="sm"
+              borderRadius="0"
+              backgroundColor="transparent"
+              name="Pakistan Flag"
+              src="https://www.flaticon.com/premium-icon/icons/svg/1863/1863138.svg"
+            />
+          </Box>
+        </Stack>
         <Text color={`mode.${colorMode}.subtext`}>
           This is my digital garden, where I write about the things I'm working
           on and share what I've learned.
