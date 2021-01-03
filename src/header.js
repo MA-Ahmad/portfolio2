@@ -87,8 +87,8 @@ const Header = props => {
             color: '#fff'
           }}
           borderRadius={{ sm: '5px' }}
-          mr={{ sm: '0', md: '6' }}
-          mt={{ sm: '2' }}
+          mr={{ sm: '0', md: '3' }}
+          mt={{ sm: '2', md: '0' }}
           color={`mode.${colorMode}.color`}
           padding={{ sm: '1rem' }}
           display={{ sm: 'block' }}
@@ -111,8 +111,8 @@ const Header = props => {
             color: '#fff'
           }}
           borderRadius={{ sm: '5px' }}
-          mr={{ sm: '0', md: '6' }}
-          mt={{ sm: '2' }}
+          mr={{ sm: '0', md: '3' }}
+          mt={{ sm: '2', md: '0' }}
           padding={{ sm: '1rem' }}
           display={{ sm: 'block' }}
           color={`mode.${colorMode}.color`}
@@ -134,8 +134,8 @@ const Header = props => {
             color: '#fff'
           }}
           borderRadius={{ sm: '5px' }}
-          mr={{ sm: '0', md: '6' }}
-          mt={{ sm: '2' }}
+          mr={{ sm: '0', md: '3' }}
+          mt={{ sm: '2', md: '0' }}
           padding={{ sm: '1rem' }}
           display={{ sm: 'block' }}
           color={`mode.${colorMode}.color`}
@@ -157,8 +157,8 @@ const Header = props => {
             color: '#fff'
           }}
           borderRadius={{ sm: '5px' }}
-          mr={{ sm: '0', md: '6' }}
-          mt={{ sm: '2' }}
+          mr={{ sm: '0', md: '3' }}
+          mt={{ sm: '2', md: '0' }}
           padding={{ sm: '1rem' }}
           display={{ sm: 'block' }}
           color={`mode.${colorMode}.color`}
