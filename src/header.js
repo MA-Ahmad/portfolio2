@@ -182,7 +182,7 @@ const Header = props => {
         </Box>
 
         <Box
-          mt={{ sm: 4, md: 0 }}
+          mt={{ sm: 3, md: 0 }}
           position={{ sm: 'absolute', md: 'unset' }}
           top="3.5rem"
           right="5.5rem"
