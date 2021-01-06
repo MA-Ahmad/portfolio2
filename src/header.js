@@ -12,6 +12,7 @@ import {
 import { NavLink } from 'react-router-dom';
 import { FiSun, FiMenu } from 'react-icons/fi';
 import { FaMoon } from 'react-icons/fa';
+import UserIcon from './assets/images/user_icon.jpg';
 
 const MenuItems = ({ colorMode, children }) => (
   <Text
@@ -65,8 +66,9 @@ const Header = props => {
           <Heading as="h1" size="lg" letterSpacing={'-.1rem'}>
             <Avatar
               name="Muhammad Ahmad"
-              size="xl"
-              src="https://avatars2.githubusercontent.com/u/37842853?v=4"
+              size="lg"
+              src={UserIcon}
+              // src="https://avatars2.githubusercontent.com/u/37842853?v=4"
             />
           </Heading>
 
@@ -96,7 +98,7 @@ const Header = props => {
             mr={{ sm: '0', md: '3' }}
             mt={{ sm: '2', md: '0' }}
             color={`mode.${colorMode}.color`}
-            padding={{ sm: '1rem' }}
+            padding="0.7rem"
             display={{ sm: 'block' }}
             _visited={{ outline: 'none' }}
             _hover={{
@@ -119,7 +121,7 @@ const Header = props => {
             borderRadius={{ sm: '5px' }}
             mr={{ sm: '0', md: '3' }}
             mt={{ sm: '2', md: '0' }}
-            padding={{ sm: '1rem' }}
+            padding="0.7rem"
             display={{ sm: 'block' }}
             color={`mode.${colorMode}.color`}
             _hover={{
@@ -142,7 +144,7 @@ const Header = props => {
             borderRadius={{ sm: '5px' }}
             mr={{ sm: '0', md: '3' }}
             mt={{ sm: '2', md: '0' }}
-            padding={{ sm: '1rem' }}
+            padding="0.7rem"
             display={{ sm: 'block' }}
             color={`mode.${colorMode}.color`}
             _hover={{
@@ -165,7 +167,7 @@ const Header = props => {
             borderRadius={{ sm: '5px' }}
             mr={{ sm: '0', md: '3' }}
             mt={{ sm: '2', md: '0' }}
-            padding={{ sm: '1rem' }}
+            padding="0.7rem"
             display={{ sm: 'block' }}
             color={`mode.${colorMode}.color`}
             _hover={{
