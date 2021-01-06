@@ -5,11 +5,6 @@ This is the source for my personal website [mahmad.me](https://www.mahmad.me).
 - [Chakra UI](https://chakra-ui.com)
 - [react icons](https://react-icons.github.io/react-icons/)
 
-<!-- 
-## Inspiration & Thanks
-- [francoisbest](https://francoisbest.com/)
--->
-
 ## License
 
 Licensed under the MIT License. Feel free to use parts of the code in your own projects with attribution!
