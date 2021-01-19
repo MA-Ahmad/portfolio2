@@ -18,8 +18,10 @@ const newTheme = {
 
 ReactDOM.render(
   <ChakraProvider theme={newTheme}>
+    {/* <ColorModeProvider> */}
     <CSSReset />
     <App />
+    {/* </ColorModeProvider> */}
   </ChakraProvider>,
   document.getElementById('root')
 );
