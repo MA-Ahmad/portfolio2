@@ -1,7 +1,6 @@
 import React from 'react';
 import { Stack, IconButton, Link } from '@chakra-ui/react';
-import { FaGithub, FaDev, FaLinkedin, FaQuora } from 'react-icons/fa';
-import { FiMail } from 'react-icons/fi';
+import siteConfig from './configs/site-config';
 
 const iconProps = {
   variant: 'ghost',
@@ -20,51 +19,18 @@ const Footer = props => {
       alignItems="center"
       {...props}
     >
-      <IconButton
-        as={Link}
-        isExternal
-        href="https://github.com/MA-Ahmad"
-        aria-label="Github Account"
-        size="lg"
-        icon={<FaGithub />}
-        {...iconProps}
-      />
-      <IconButton
-        as={Link}
-        isExternal
-        href="https://dev.to/m_ahmad"
-        aria-label="Dev Account"
-        size="lg"
-        icon={<FaDev />}
-        {...iconProps}
-      />
-      <IconButton
-        as={Link}
-        isExternal
-        href="https://www.linkedin.com/feed/"
-        aria-label="LinkedIn Account"
-        size="lg"
-        icon={<FaLinkedin />}
-        {...iconProps}
-      />
-      <IconButton
-        as={Link}
-        isExternal
-        href="mailto:muhammad.ahmad8043@gmail.com"
-        aria-label="Mail ahmad"
-        size="lg"
-        icon={<FiMail />}
-        {...iconProps}
-      />
-      <IconButton
-        isExternal
-        as={Link}
-        href="https://www.quora.com/profile/Muhammad-Ahmad-66"
-        aria-label="Quora Account"
-        size="lg"
-        icon={<FaQuora />}
-        {...iconProps}
-      />
+      {siteConfig.author.accounts.map(sc => (
+        <IconButton
+          as={Link}
+          isExternal
+          href={sc.url}
+          aria-label={sc.label}
+          size="lg"
+          colorScheme={sc.type}
+          icon={sc.icon}
+          {...iconProps}
+        />
+      ))}
     </Stack>
   );
 };
