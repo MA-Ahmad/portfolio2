@@ -12,7 +12,7 @@ export const repos = [
   {
     title: 'MA-Ahmad/blog-app-react-frontend',
     description: 'React frontend of a blog app with rails on backend.',
-    languages: 'Javascript, ChakraUi',
+    languages: 'Javascript, React, ChakraUi',
     url: 'https://github.com/MA-Ahmad/blog-app-react-frontend',
     live: 'https://blog-frontend-react.herokuapp.com',
     stars: '6'
@@ -20,7 +20,7 @@ export const repos = [
   {
     title: 'MA-Ahmad/notebook',
     description: 'Make notes for your daily work.',
-    languages: 'Typescript, ChakraUi',
+    languages: 'Typescript, React, ChakraUi',
     url: 'https://github.com/MA-Ahmad/notebook',
     stars: '2'
   },
