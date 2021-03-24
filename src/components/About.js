@@ -25,6 +25,7 @@ function Company({
   period,
   logo,
   colorMode,
+  alt,
   isEducation = false
 }) {
   return (
@@ -51,7 +52,7 @@ function Company({
             }}
             objectFit="cover"
             src={logo}
-            alt="Brainx technologies"
+            alt={alt}
           />
           <Stack spacing={2} pl={3}>
             <Heading fontSize="xl" color={`mode.${colorMode}.career.text`}>
@@ -99,6 +100,7 @@ const About = () => {
   const companies = [
     {
       title: 'Phaedra Solutions',
+      alt: 'PS image',
       role: 'Senior Software Engineer',
       skills: 'Ruby, ROR, Typescript, Javascript, React, AWS',
       period: '2019 - Present',
@@ -106,6 +108,7 @@ const About = () => {
     },
     {
       title: 'Brainx Technologies',
+      alt: 'BT image',
       role: 'Software Engineer',
       skills: 'Ruby, ROR, Javascript, Python',
       period: '2018 - 2019',
@@ -113,6 +116,7 @@ const About = () => {
     },
     {
       title: 'Codenya Studio',
+      alt: 'CS image',
       role: 'Co-founder, CTO',
       skills: 'Project Management, Web Development, Devops',
       period: '2018 - Present',
@@ -120,6 +124,7 @@ const About = () => {
     },
     {
       title: 'Brainplow',
+      alt: 'Brainplow image',
       role: 'Software Engineer',
       skills: 'Javascript, python, Angular',
       period: '2017 - 2018',
@@ -225,6 +230,7 @@ const About = () => {
         </Heading>
         <Company
           title="National University of Computer and Emerging Sciences"
+          alt="Nuces image"
           role="Bachelor's Degree in Computer Science"
           skills="Project Management, Web Development, Data Structures"
           period="2013 - 2017"
