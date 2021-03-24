@@ -1,6 +1,6 @@
 export const repos = [
   {
-    title: 'MA-Ahmad/reactBlog',
+    title: 'Blog App(React)',
     description:
       'A React Blog App built by using libraries like ChakraUI, Formik.',
     languages: 'Javascript, React, ChakraUi, Formik',
@@ -10,7 +10,7 @@ export const repos = [
     fork: '1'
   },
   {
-    title: 'MA-Ahmad/blog-app-react-frontend',
+    title: 'Blog App (Front-end)',
     description: 'React frontend of a blog app with rails on backend.',
     languages: 'Javascript, React, ChakraUi',
     url: 'https://github.com/MA-Ahmad/blog-app-react-frontend',
@@ -18,14 +18,22 @@ export const repos = [
     stars: '6'
   },
   {
-    title: 'MA-Ahmad/notebook',
-    description: 'Make notes for your daily work.',
-    languages: 'Typescript, React, ChakraUi',
-    url: 'https://github.com/MA-Ahmad/notebook',
+    title: 'Blog App (Back-end)',
+    description: 'Rails backend api for blog app with react on frontend.',
+    languages: 'Ruby, Rails',
+    url: 'https://github.com/MA-Ahmad/blog-app-rails-backend',
     stars: '2'
   },
   {
-    title: 'MA-Ahmad/react_rails_blog',
+    title: 'Notebook',
+    description: 'Make notes for your daily work.',
+    languages: 'Typescript, React, ChakraUi',
+    url: 'https://github.com/MA-Ahmad/notebook',
+    live: 'https://ma-ahmad.github.io/notebook',
+    stars: '2'
+  },
+  {
+    title: 'Blog App',
     description: 'A simple react+rails(RR) CRUD app with tailwindcss.',
     languages: 'Ruby, Rails, Javascript, React, TailwindCss',
     url: 'https://github.com/MA-Ahmad/react_rails_blog',
@@ -33,14 +41,7 @@ export const repos = [
     stars: '2'
   },
   {
-    title: 'MA-Ahmad/blog-app-rails-backend',
-    description: 'Rails backend api for blog app with react on frontend.',
-    languages: 'Ruby, Rails',
-    url: 'https://github.com/MA-Ahmad/blog-app-rails-backend',
-    stars: '2'
-  },
-  {
-    title: 'MA-Ahmad/rails-authentication-app',
+    title: 'Authentication API',
     description:
       'Simple Authentication API that can be used with any front-end app like React, Vue, Angular app.',
     languages: 'Ruby, Rails',
@@ -48,7 +49,7 @@ export const repos = [
     stars: '1'
   },
   {
-    title: 'MA-Ahmad/Video-to-text',
+    title: 'Video-to-text',
     description: 'Convert a video to text using ruby.',
     languages: 'Ruby',
     url: 'https://github.com/MA-Ahmad/Video-to-text',
