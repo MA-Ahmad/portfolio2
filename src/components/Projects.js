@@ -16,57 +16,6 @@ import notch_img from '../assets/images/Projects/notch.png';
 import souq_img from '../assets/images/Projects/souq.png';
 import gosave_img from '../assets/images/Projects/gosave.png';
 
-function Project_test({ title, desc, tech, colorMode, image_url }) {
-  return (
-    <Stack marginBottom={5}>
-      <Heading as="h4" size="md" color={`mode.${colorMode}.career.text`}>
-        <Flex alignItems="center">
-          <Text as="span" color={`mode.${colorMode}.career.text`}>
-            {title}
-          </Text>
-        </Flex>
-      </Heading>
-      <Flex
-        p={5}
-        borderWidth="1px"
-        borderColor={`mode.${colorMode}.border`}
-        backgroundColor={`mode.${colorMode}.cardBG`}
-        position="relative"
-        rounded="md"
-      >
-        <Box>
-          <Image rounded="md" width="12em" src={image_url} />
-        </Box>
-        <Stack mt={2} pl={4}>
-          <Text
-            fontSize="lg"
-            fontWeight="semibold"
-            lineHeight="short"
-            color={`mode.${colorMode}.subtext`}
-          >
-            {desc}
-          </Text>
-          <Stack isInline>
-            {tech.split(',').map(tag => (
-              <Tag
-                size="sm"
-                padding="0 3px"
-                key={tag}
-                color="#4299E1"
-                fontWeight="bold"
-                color={`mode.${colorMode}.career.subtext`}
-                bgColor={`mode.${colorMode}.career.tagBG`}
-              >
-                {tag}
-              </Tag>
-            ))}
-          </Stack>
-        </Stack>
-      </Flex>
-    </Stack>
-  );
-}
-
 function Project({ title, desc, tech, colorMode, image_url }) {
   return (
     <Stack marginBottom={5}>
@@ -78,7 +27,8 @@ function Project({ title, desc, tech, colorMode, image_url }) {
         </Flex>
       </Heading>
       <Grid
-        templateColumns="repeat(2, 1fr)"
+        // templateColumns="repeat(2, 1fr)"
+        gridTemplateColumns={['1fr', '1fr 1fr', '1fr 1fr', '1fr 1fr']}
         gap={2}
         p={5}
         _hover={{ shadow: 'md' }}
@@ -88,14 +38,14 @@ function Project({ title, desc, tech, colorMode, image_url }) {
         position="relative"
         rounded="md"
       >
-        <Box w="100%" h="100%">
+        <Flex w="100%" h="100%" alignItems="center">
           <Image
             rounded="md"
             src={image_url ? image_url : 'https://bit.ly/2k1H1t6'}
           />
-        </Box>
+        </Flex>
         <Box w="100%">
-          <Stack mt={2} pl={4}>
+          <Stack mt={2} pl={[0, 4, 4, 4]}>
             <Text
               fontSize="lg"
               fontWeight="semibold"
