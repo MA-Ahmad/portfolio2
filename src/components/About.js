@@ -18,7 +18,15 @@ import CodenyaLogo from '../assets/images/codenya.png';
 import BrainplowLogo from '../assets/images/brainplow.jpg';
 import UniLogo from '../assets/images/fast.png';
 
-function Company({ title, role, skills, period, logo, colorMode }) {
+function Company({
+  title,
+  role,
+  skills,
+  period,
+  logo,
+  colorMode,
+  isEducation = false
+}) {
   return (
     <Box
       paddingX={4}
@@ -33,7 +41,14 @@ function Company({ title, role, skills, period, logo, colorMode }) {
         <Flex>
           <Image
             rounded="full"
-            htmlWidth="50px"
+            width={{
+              sm: isEducation ? '4rem' : '20',
+              md: '20'
+            }}
+            height={{
+              sm: isEducation ? '4rem' : 'auto',
+              md: 'auto'
+            }}
             objectFit="cover"
             src={logo}
             alt="Brainx technologies"
@@ -44,10 +59,17 @@ function Company({ title, role, skills, period, logo, colorMode }) {
             </Heading>
             <Heading fontSize="sm" color={`mode.${colorMode}.career.subtext`}>
               {role}
+              <Text
+                display={['block', 'none', 'none', 'none']}
+                fontSize={14}
+                color={`mode.${colorMode}.career.subtext`}
+              >
+                {period}
+              </Text>
             </Heading>
           </Stack>
         </Flex>
-        <Stack>
+        <Stack display={['none', 'flex', 'flex', 'flex']}>
           <Text fontSize={14} color={`mode.${colorMode}.career.subtext`}>
             {period}
           </Text>
@@ -78,14 +100,14 @@ const About = () => {
     {
       title: 'Phaedra Solutions',
       role: 'Senior Software Engineer',
-      skills: 'Ruby, Ruby on Rails, Javascript, React, Devops',
+      skills: 'Ruby, ROR, Typescript, Javascript, React, AWS',
       period: '2019 - Present',
       logo: PhaedraLogo
     },
     {
       title: 'Brainx Technologies',
       role: 'Software Engineer',
-      skills: 'Ruby, Ruby on Rails, Javascript, Python',
+      skills: 'Ruby, ROR, Javascript, Python',
       period: '2018 - 2019',
       logo: BrainxLogo
     },
@@ -204,10 +226,11 @@ const About = () => {
         <Company
           title="National University of Computer and Emerging Sciences"
           role="Bachelor's Degree in Computer Science"
-          skills="Project Management, Web Development, Algorithms, Data Structures"
+          skills="Project Management, Web Development, Data Structures"
           period="2013 - 2017"
           logo={UniLogo}
           colorMode={colorMode}
+          isEducation={true}
         />
       </Stack>
     </Stack>
