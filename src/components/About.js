@@ -43,8 +43,8 @@ function Company({
           <Image
             rounded="full"
             width={{
-              sm: isEducation ? '4rem' : '20',
-              md: '20'
+              sm: '4rem',
+              md: '14'
             }}
             height={{
               sm: isEducation ? '4rem' : 'auto',
