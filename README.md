@@ -1,4 +1,4 @@
-This is the source for my personal website [mahmad.me](https://www.mahmad.me).
+This is the source for my personal website.
 
 ## Built with
 - [Reactjs](https://reactjs.org/)
