@@ -148,7 +148,7 @@ const OpenSource = () => {
         <Heading color={`mode.${colorMode}.text`}>Open Source</Heading>
         <Text color={`mode.${colorMode}.subtext`}>
           This page lists some of the open source repositories I have published
-          or contribute to.
+          or contributed to.
         </Text>
       </Stack>
       <Stack spacing={4} marginBottom={6}>
