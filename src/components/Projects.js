@@ -8,7 +8,9 @@ import {
   Tag,
   Image,
   useColorMode,
-  Grid
+  Grid,
+  Skeleton,
+  AspectRatio
 } from '@chakra-ui/react';
 import peterpitch_img from '../assets/images/Projects/peterpitch.png';
 import workof_img from '../assets/images/Projects/workof.png';
@@ -39,10 +41,14 @@ function Project({ title, desc, tech, colorMode, image_url }) {
         rounded="md"
       >
         <Flex w="100%" h="100%" alignItems="center">
-          <Image
-            rounded="md"
-            src={image_url ? image_url : 'https://bit.ly/2k1H1t6'}
-          />
+          <AspectRatio ratio={1.85 / 1} w="100%" borderBottomWidth="1px">
+            <Image
+              rounded="md"
+              src={image_url ? image_url : 'https://bit.ly/2k1H1t6'}
+              fallback={<Skeleton />}
+              objectFit="cover"
+            />
+          </AspectRatio>
         </Flex>
         <Box w="100%">
           <Stack mt={2} pl={[0, 4, 4, 4]}>
