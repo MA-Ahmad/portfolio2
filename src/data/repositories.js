@@ -7,7 +7,7 @@ export const repos = [
     url: 'https://github.com/MA-Ahmad/reactBlog',
     live: 'https://ma-ahmad.github.io/reactBlog',
     stars: '9',
-    fork: '1'
+    fork: '2'
   },
   {
     title: 'Blog App (Front-end)',
@@ -30,7 +30,8 @@ export const repos = [
     languages: 'Typescript, React, ChakraUi',
     url: 'https://github.com/MA-Ahmad/notebook',
     live: 'https://ma-ahmad.github.io/notebook',
-    stars: '2'
+    stars: '12',
+    fork: '3'
   },
   {
     title: 'Blog App',
