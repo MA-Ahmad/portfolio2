@@ -1,5 +1,24 @@
 export const repos = [
   {
+    title: 'Portfolio',
+    description:
+      'My personal portfolio to show my skills, experience, and articles I published.',
+    languages: 'Typescript, React, ChakraUi',
+    url: 'https://github.com/MA-Ahmad/portfolio',
+    live: 'https://mahmad.me',
+    stars: '21',
+    fork: '4'
+  },
+  {
+    title: 'Notebook',
+    description: 'Make notes for your daily work.',
+    languages: 'Typescript, React, ChakraUi',
+    url: 'https://github.com/MA-Ahmad/notebook',
+    live: 'https://ma-ahmad.github.io/notebook',
+    stars: '12',
+    fork: '3'
+  },
+  {
     title: 'Blog App(React)',
     description:
       'A React Blog App built by using libraries like ChakraUI, Formik.',
@@ -23,15 +42,6 @@ export const repos = [
     languages: 'Ruby, Rails',
     url: 'https://github.com/MA-Ahmad/blog-app-rails-backend',
     stars: '2'
-  },
-  {
-    title: 'Notebook',
-    description: 'Make notes for your daily work.',
-    languages: 'Typescript, React, ChakraUi',
-    url: 'https://github.com/MA-Ahmad/notebook',
-    live: 'https://ma-ahmad.github.io/notebook',
-    stars: '12',
-    fork: '3'
   },
   {
     title: 'Blog App',
