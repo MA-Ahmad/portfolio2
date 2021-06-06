@@ -6,7 +6,7 @@ export const repos = [
     languages: 'Typescript, React, ChakraUi',
     url: 'https://github.com/MA-Ahmad/portfolio',
     live: 'https://mahmad.me',
-    stars: '21',
+    stars: '22',
     fork: '4'
   },
   {
