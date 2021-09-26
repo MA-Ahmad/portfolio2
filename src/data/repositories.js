@@ -6,8 +6,8 @@ export const repos = [
     languages: 'Typescript, React, ChakraUi',
     url: 'https://github.com/MA-Ahmad/portfolio',
     live: 'https://mahmad.me',
-    stars: '34',
-    fork: '6'
+    stars: '58',
+    fork: '9'
   },
   {
     title: 'Notebook',
@@ -16,7 +16,7 @@ export const repos = [
     url: 'https://github.com/MA-Ahmad/notebook',
     live: 'https://ma-ahmad.github.io/notebook',
     stars: '15',
-    fork: '4'
+    fork: '7'
   },
   {
     title: 'Blog App(React)',
