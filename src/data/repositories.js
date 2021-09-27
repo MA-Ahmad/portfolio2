@@ -10,6 +10,16 @@ export const repos = [
     fork: '9'
   },
   {
+    title: 'Portfolio2',
+    description:
+      'This portfolio built by using Next.js, ChakraUi and Typescript.',
+    languages: 'Nextjs, chakraUi',
+    url: 'https://github.com/MA-Ahmad/myPortfolio',
+    live: 'https://my-portfolio-ma-ahmad.vercel.app/',
+    stars: '56',
+    fork: '13'
+  },
+  {
     title: 'Notebook',
     description: 'Make notes for your daily work.',
     languages: 'Typescript, React, ChakraUi',
