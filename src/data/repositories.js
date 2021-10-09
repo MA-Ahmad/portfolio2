@@ -29,6 +29,28 @@ export const repos = [
     fork: '7'
   },
   {
+    title: 'Video-to-text',
+    description: 'Convert a video to text using ruby.',
+    languages: 'Ruby',
+    url: 'https://github.com/MA-Ahmad/Video-to-text',
+    stars: '3'
+  },
+  {
+    title: 'Blog App (Back-end)',
+    description: 'Rails backend api for blog app with react on frontend.',
+    languages: 'Ruby, Rails',
+    url: 'https://github.com/MA-Ahmad/blog-app-rails-backend',
+    stars: '3'
+  },
+  {
+    title: 'Blog App',
+    description: 'A simple react+rails(RR) CRUD app with tailwindcss.',
+    languages: 'Ruby, Rails, Javascript, React, TailwindCss',
+    url: 'https://github.com/MA-Ahmad/react_rails_blog',
+    live: 'https://react-on-rails-blog.herokuapp.com',
+    stars: '2'
+  },
+  {
     title: 'Blog App(React)',
     description:
       'A React Blog App built by using libraries like ChakraUI, Formik.',
@@ -48,33 +70,11 @@ export const repos = [
     fork: '1'
   },
   {
-    title: 'Blog App (Back-end)',
-    description: 'Rails backend api for blog app with react on frontend.',
-    languages: 'Ruby, Rails',
-    url: 'https://github.com/MA-Ahmad/blog-app-rails-backend',
-    stars: '3'
-  },
-  {
-    title: 'Blog App',
-    description: 'A simple react+rails(RR) CRUD app with tailwindcss.',
-    languages: 'Ruby, Rails, Javascript, React, TailwindCss',
-    url: 'https://github.com/MA-Ahmad/react_rails_blog',
-    live: 'https://react-on-rails-blog.herokuapp.com',
-    stars: '2'
-  },
-  {
     title: 'Authentication API',
     description:
       'Simple Authentication API that can be used with any front-end app like React, Vue, Angular app.',
     languages: 'Ruby, Rails',
     url: 'https://github.com/MA-Ahmad/rails-authentication-app',
     stars: '1'
-  },
-  {
-    title: 'Video-to-text',
-    description: 'Convert a video to text using ruby.',
-    languages: 'Ruby',
-    url: 'https://github.com/MA-Ahmad/Video-to-text',
-    stars: '3'
   }
 ];
