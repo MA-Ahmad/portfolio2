@@ -29,6 +29,14 @@ export const repos = [
     fork: '7'
   },
   {
+    title: 'Blog App',
+    description: 'A simple react+rails(RR) CRUD app with tailwindcss.',
+    languages: 'Ruby, Rails, Javascript, React, TailwindCss',
+    url: 'https://github.com/MA-Ahmad/react_rails_blog',
+    live: 'https://react-on-rails-blog.herokuapp.com',
+    stars: '4'
+  },
+  {
     title: 'Video-to-text',
     description: 'Convert a video to text using ruby.',
     languages: 'Ruby',
@@ -41,14 +49,6 @@ export const repos = [
     languages: 'Ruby, Rails',
     url: 'https://github.com/MA-Ahmad/blog-app-rails-backend',
     stars: '3'
-  },
-  {
-    title: 'Blog App',
-    description: 'A simple react+rails(RR) CRUD app with tailwindcss.',
-    languages: 'Ruby, Rails, Javascript, React, TailwindCss',
-    url: 'https://github.com/MA-Ahmad/react_rails_blog',
-    live: 'https://react-on-rails-blog.herokuapp.com',
-    stars: '2'
   },
   {
     title: 'Blog App(React)',
