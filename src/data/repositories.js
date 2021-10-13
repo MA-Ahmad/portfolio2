@@ -20,6 +20,25 @@ export const repos = [
     fork: '13'
   },
   {
+    title: 'Blog App(React)',
+    description:
+      'A React Blog App built by using libraries like ChakraUI, Formik.',
+    languages: 'Javascript, React, ChakraUi, Formik',
+    url: 'https://github.com/MA-Ahmad/reactBlog',
+    live: 'https://ma-ahmad.github.io/reactBlog',
+    stars: '13',
+    fork: '2'
+  },
+  {
+    title: 'Blog App (Front-end)',
+    description: 'React frontend of a blog app with rails on backend.',
+    languages: 'Javascript, React, ChakraUi',
+    url: 'https://github.com/MA-Ahmad/blog-app-react-frontend',
+    live: 'https://blog-frontend-react.herokuapp.com',
+    stars: '10',
+    fork: '1'
+  },
+  {
     title: 'Notebook',
     description: 'Make notes for your daily work.',
     languages: 'Typescript, React, ChakraUi',
@@ -51,30 +70,11 @@ export const repos = [
     stars: '3'
   },
   {
-    title: 'Blog App(React)',
-    description:
-      'A React Blog App built by using libraries like ChakraUI, Formik.',
-    languages: 'Javascript, React, ChakraUi, Formik',
-    url: 'https://github.com/MA-Ahmad/reactBlog',
-    live: 'https://ma-ahmad.github.io/reactBlog',
-    stars: '13',
-    fork: '2'
-  },
-  {
-    title: 'Blog App (Front-end)',
-    description: 'React frontend of a blog app with rails on backend.',
-    languages: 'Javascript, React, ChakraUi',
-    url: 'https://github.com/MA-Ahmad/blog-app-react-frontend',
-    live: 'https://blog-frontend-react.herokuapp.com',
-    stars: '10',
-    fork: '1'
-  },
-  {
     title: 'Authentication API',
     description:
       'Simple Authentication API that can be used with any front-end app like React, Vue, Angular app.',
     languages: 'Ruby, Rails',
     url: 'https://github.com/MA-Ahmad/rails-authentication-app',
-    stars: '1'
+    stars: '2'
   }
 ];
