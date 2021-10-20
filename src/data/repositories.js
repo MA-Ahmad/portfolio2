@@ -20,6 +20,15 @@ export const repos = [
     fork: '13'
   },
   {
+    title: 'Notebook',
+    description: 'Make notes for your daily work.',
+    languages: 'Typescript, React, ChakraUi',
+    url: 'https://github.com/MA-Ahmad/notebook',
+    live: 'https://ma-ahmad.github.io/notebook',
+    stars: '15',
+    fork: '7'
+  },
+  {
     title: 'Blog App(React)',
     description:
       'A React Blog App built by using libraries like ChakraUI, Formik.',
@@ -37,15 +46,6 @@ export const repos = [
     live: 'https://blog-frontend-react.herokuapp.com',
     stars: '10',
     fork: '1'
-  },
-  {
-    title: 'Notebook',
-    description: 'Make notes for your daily work.',
-    languages: 'Typescript, React, ChakraUi',
-    url: 'https://github.com/MA-Ahmad/notebook',
-    live: 'https://ma-ahmad.github.io/notebook',
-    stars: '15',
-    fork: '7'
   },
   {
     title: 'Blog App',
