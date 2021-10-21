@@ -16,7 +16,7 @@ export const repos = [
     languages: 'Nextjs, chakraUi',
     url: 'https://github.com/MA-Ahmad/myPortfolio',
     live: 'https://my-portfolio-ma-ahmad.vercel.app/',
-    stars: '56',
+    stars: '57',
     fork: '13'
   },
   {
