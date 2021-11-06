@@ -17,7 +17,7 @@ export const repos = [
     url: 'https://github.com/MA-Ahmad/myPortfolio',
     live: 'https://my-portfolio-ma-ahmad.vercel.app/',
     stars: '61',
-    fork: '12'
+    fork: '14'
   },
   {
     title: 'Notebook',
