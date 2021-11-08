@@ -25,7 +25,7 @@ export const repos = [
     languages: 'Typescript, React, ChakraUi',
     url: 'https://github.com/MA-Ahmad/notebook',
     live: 'https://ma-ahmad.github.io/notebook',
-    stars: '17',
+    stars: '18',
     fork: '7'
   },
   {
