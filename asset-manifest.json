@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/portfolio2/static/js/main.81b6168f.chunk.js",
-    "main.js.map": "/portfolio2/static/js/main.81b6168f.chunk.js.map",
+    "main.js": "/portfolio2/static/js/main.3b77c5a2.chunk.js",
+    "main.js.map": "/portfolio2/static/js/main.3b77c5a2.chunk.js.map",
     "runtime-main.js": "/portfolio2/static/js/runtime-main.afe67eb9.js",
     "runtime-main.js.map": "/portfolio2/static/js/runtime-main.afe67eb9.js.map",
     "static/js/2.d94640e9.chunk.js": "/portfolio2/static/js/2.d94640e9.chunk.js",
     "static/js/2.d94640e9.chunk.js.map": "/portfolio2/static/js/2.d94640e9.chunk.js.map",
     "index.html": "/portfolio2/index.html",
-    "precache-manifest.9343c17941bd1123bb96adc1344a0a7f.js": "/portfolio2/precache-manifest.9343c17941bd1123bb96adc1344a0a7f.js",
+    "precache-manifest.59166947fbaece412b5f96f7ee91e35c.js": "/portfolio2/precache-manifest.59166947fbaece412b5f96f7ee91e35c.js",
     "service-worker.js": "/portfolio2/service-worker.js",
     "static/js/2.d94640e9.chunk.js.LICENSE.txt": "/portfolio2/static/js/2.d94640e9.chunk.js.LICENSE.txt",
     "static/media/codenya.png": "/portfolio2/static/media/codenya.08dd3b63.png",
@@ -22,6 +22,6 @@
   "entrypoints": [
     "static/js/runtime-main.afe67eb9.js",
     "static/js/2.d94640e9.chunk.js",
-    "static/js/main.81b6168f.chunk.js"
+    "static/js/main.3b77c5a2.chunk.js"
   ]
 }
