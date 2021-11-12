@@ -7,7 +7,7 @@ export const repos = [
     url: 'https://github.com/MA-Ahmad/portfolio',
     live: 'https://mahmad.me',
     stars: '60',
-    fork: '10'
+    fork: '11'
   },
   {
     title: 'Portfolio2',
