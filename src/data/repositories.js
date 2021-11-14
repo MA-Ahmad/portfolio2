@@ -60,7 +60,7 @@ export const repos = [
     description: 'Convert a video to text using ruby.',
     languages: 'Ruby',
     url: 'https://github.com/MA-Ahmad/Video-to-text',
-    stars: '3'
+    stars: '4'
   },
   {
     title: 'Blog App (Back-end)',
