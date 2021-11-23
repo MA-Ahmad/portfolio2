@@ -6,7 +6,7 @@ export const repos = [
     languages: 'Typescript, React, ChakraUi',
     url: 'https://github.com/MA-Ahmad/portfolio',
     live: 'https://mahmad.me',
-    stars: '60',
+    stars: '59',
     fork: '11'
   },
   {
@@ -17,7 +17,7 @@ export const repos = [
     url: 'https://github.com/MA-Ahmad/myPortfolio',
     live: 'https://my-portfolio-ma-ahmad.vercel.app/',
     stars: '62',
-    fork: '15'
+    fork: '14'
   },
   {
     title: 'Notebook',
