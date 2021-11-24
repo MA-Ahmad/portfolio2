@@ -67,7 +67,8 @@ export const repos = [
     description: 'Rails backend api for blog app with react on frontend.',
     languages: 'Ruby, Rails',
     url: 'https://github.com/MA-Ahmad/blog-app-rails-backend',
-    stars: '3'
+    stars: '4',
+    fork: '1'
   },
   {
     title: 'Authentication API',
