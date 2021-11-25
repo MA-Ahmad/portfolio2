@@ -44,8 +44,8 @@ export const repos = [
     languages: 'Javascript, React, ChakraUi',
     url: 'https://github.com/MA-Ahmad/blog-app-react-frontend',
     live: 'https://blog-frontend-react.herokuapp.com',
-    stars: '10',
-    fork: '1'
+    stars: '12',
+    fork: '3'
   },
   {
     title: 'Blog App',
