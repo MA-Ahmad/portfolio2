@@ -35,7 +35,7 @@ export const repos = [
     languages: 'Javascript, React, ChakraUi, Formik',
     url: 'https://github.com/MA-Ahmad/reactBlog',
     live: 'https://ma-ahmad.github.io/reactBlog',
-    stars: '13',
+    stars: '14',
     fork: '2'
   },
   {
