@@ -45,7 +45,7 @@ export const repos = [
     url: 'https://github.com/MA-Ahmad/blog-app-react-frontend',
     live: 'https://blog-frontend-react.herokuapp.com',
     stars: '12',
-    fork: '3'
+    fork: '4'
   },
   {
     title: 'Blog App',
