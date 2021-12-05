@@ -36,7 +36,7 @@ export const repos = [
     url: 'https://github.com/MA-Ahmad/reactBlog',
     live: 'https://ma-ahmad.github.io/reactBlog',
     stars: '14',
-    fork: '2'
+    fork: '4'
   },
   {
     title: 'Blog App (Front-end)',
