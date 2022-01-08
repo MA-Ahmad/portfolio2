@@ -3,21 +3,21 @@ export const repos = [
     title: 'Portfolio',
     description:
       'My personal portfolio to show my skills, experience, and articles I published.',
-    languages: 'Typescript, React, ChakraUi',
-    url: 'https://github.com/MA-Ahmad/portfolio',
+    languages: 'Nextjs, chakraUi',
+    url: 'https://github.com/MA-Ahmad/myPortfolio',
     live: 'https://mahmad.me',
-    stars: '60',
-    fork: '11'
+    stars: '66',
+    fork: '14'
   },
   {
     title: 'Portfolio2',
     description:
       'This portfolio built by using Next.js, ChakraUi and Typescript.',
-    languages: 'Nextjs, chakraUi',
-    url: 'https://github.com/MA-Ahmad/myPortfolio',
-    live: 'https://my-portfolio-ma-ahmad.vercel.app/',
-    stars: '62',
-    fork: '14'
+    languages: 'Typescript, React, ChakraUi',
+    url: 'https://github.com/MA-Ahmad/portfolio',
+    live: 'https://ma-ahmad.github.io/portfolio',
+    stars: '65',
+    fork: '12'
   },
   {
     title: 'Notebook',
