@@ -1,6 +1,6 @@
 This is the source for my personal website.
 
-## Built with
+## Built with .
 - [Reactjs](https://reactjs.org/)
 - [Chakra UI](https://chakra-ui.com)
 - [react icons](https://react-icons.github.io/react-icons/)
