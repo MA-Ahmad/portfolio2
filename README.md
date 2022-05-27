@@ -5,7 +5,7 @@ This is the source for my personal website.
 - [Chakra UI](https://chakra-ui.com)
 - [react icons](https://react-icons.github.io/react-icons/)
 
-## View and copy code of your favourite components
+## View and copy Components code
 [TemplatesKart website](https://templateskart.com/projects/portfolio2)
 
 ## License
