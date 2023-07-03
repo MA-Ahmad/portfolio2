@@ -36,6 +36,8 @@ const Header = props => {
   const [show, setShow] = useState(false);
   const handleToggle = () => setShow(!show);
   const { colorMode, toggleColorMode } = useColorMode();
+  // const navLinkBg = useColorModeValue('white', 'gray.800')
+
 
   return (
     <>

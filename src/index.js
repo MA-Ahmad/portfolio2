@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import { ChakraProvider, ColorModeProvider, CSSReset } from '@chakra-ui/react';
+import { ChakraProvider, CSSReset } from '@chakra-ui/react';
 import customTheme from './theme/theme';
 import 'focus-visible/dist/focus-visible';
 
@@ -13,7 +13,7 @@ breakpoints.xl = breakpoints[3];
 
 const newTheme = {
   ...customTheme,
-  breakpoints
+  breakpoints,
 };
 
 ReactDOM.render(
