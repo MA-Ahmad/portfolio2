@@ -8,7 +8,7 @@ import {
   Tag,
   Image,
   useColorMode,
-  Avatar
+  Avatar,
 } from '@chakra-ui/react';
 import { FaGraduationCap } from 'react-icons/fa';
 import { BsFillBriefcaseFill } from 'react-icons/bs';
@@ -26,7 +26,7 @@ function Company({
   logo,
   colorMode,
   alt,
-  isEducation = false
+  isEducation = false,
 }) {
   return (
     <Box
@@ -44,11 +44,11 @@ function Company({
             rounded="full"
             width={{
               sm: '4rem',
-              md: '14'
+              md: '14',
             }}
             height={{
               sm: isEducation ? '4rem' : 'auto',
-              md: 'auto'
+              md: 'auto',
             }}
             objectFit="cover"
             src={logo}
@@ -77,7 +77,7 @@ function Company({
         </Stack>
       </Flex>
       <Stack spacing={2} mt={3} isInline alignItems="center">
-        {skills.split(',').map(skill => (
+        {skills.split(',').map((skill) => (
           <Tag
             size="sm"
             padding="0 3px"
@@ -104,7 +104,7 @@ const About = () => {
       role: 'Senior Software Engineer',
       skills: 'Ruby, ROR, Typescript, Javascript, React, AWS',
       period: '2019 - Present',
-      logo: PhaedraLogo
+      logo: PhaedraLogo,
     },
     {
       title: 'Brainx Technologies',
@@ -112,7 +112,7 @@ const About = () => {
       role: 'Software Engineer',
       skills: 'Ruby, ROR, Javascript, Python',
       period: '2018 - 2019',
-      logo: BrainxLogo
+      logo: BrainxLogo,
     },
     {
       title: 'Codenya Studio',
@@ -120,7 +120,7 @@ const About = () => {
       role: 'Co-founder, CTO',
       skills: 'Project Management, Web Development, Devops',
       period: '2018 - Present',
-      logo: CodenyaLogo
+      logo: CodenyaLogo,
     },
     {
       title: 'Brainplow',
@@ -128,8 +128,8 @@ const About = () => {
       role: 'Software Engineer',
       skills: 'Javascript, python, Angular',
       period: '2017 - 2018',
-      logo: BrainplowLogo
-    }
+      logo: BrainplowLogo,
+    },
   ];
   return (
     <Stack
@@ -144,7 +144,7 @@ const About = () => {
     >
       <Stack spacing={2} marginBottom={8}>
         <Heading color={`mode.${colorMode}.text`} display="flex">
-          Hi, I'm Ahmad{' '}
+          Hi, I'm Adrian!
         </Heading>
         <Stack as="flex" flexDirection="row" alignItems="center">
           <Box>

@@ -1,9 +1,11 @@
 import React from 'react';
 import { useColorMode } from '@chakra-ui/react';
 import customTheme from '../theme/theme';
-import Routes from '../Routes';
+import { Outlet } from 'react-router-dom';
+import Header from './Header';
+import Footer from './Footer';
 
-const Layout = ({ children }) => {
+const Layout = () => {
   const { colorMode, setColorMode } = useColorMode();
   if (colorMode === undefined) setColorMode('light');
   const brandColorTheme =
@@ -11,7 +13,9 @@ const Layout = ({ children }) => {
 
   return (
     <div style={{ minHeight: '90vh', background: brandColorTheme.background }}>
-      <Routes />
+      <Header />
+      <Outlet />
+      <Footer />
     </div>
   );
 };

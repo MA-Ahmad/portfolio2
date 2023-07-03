@@ -1,14 +1,14 @@
 import React from 'react';
 import { Stack, IconButton, Link } from '@chakra-ui/react';
-import siteConfig from './configs/site-config';
+import siteConfig from '../configs/site-config';
 
 const iconProps = {
   variant: 'ghost',
   size: 'lg',
-  isRound: true
+  isRound: true,
 };
 
-const Footer = props => {
+const Footer = (props) => {
   return (
     <Stack
       as="footer"
@@ -19,7 +19,7 @@ const Footer = props => {
       alignItems="center"
       {...props}
     >
-      {siteConfig.author.accounts.map(sc => (
+      {siteConfig.author.accounts.map((sc) => (
         <IconButton
           as={Link}
           isExternal
